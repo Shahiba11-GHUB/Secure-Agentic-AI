@@ -1,0 +1,19 @@
+{
+  "scenario_id": "LOGIN-001",
+  "scenario_name": "Suspicious Login Investigation",
+  "description": "A simulated sign-in from an unusual location requires security investigation.",
+  "initial_evidence": ["unusual_location_alert"],
+  "required_evidence": ["login_history_checked", "ip_reputation_checked", "device_status_reviewed"],
+  "goal": "Collect required evidence and generate a recommendation; do not automatically change an account",
+  "actions": [
+    {"id": "check_login_history", "cost": 1, "policy": "allowed", "preconditions": [], "effects": ["login_history_checked"]},
+    {"id": "check_ip_reputation", "cost": 1, "policy": "allowed", "preconditions": [], "effects": ["ip_reputation_checked"]},
+    {"id": "review_device_status", "cost": 2, "policy": "allowed", "preconditions": [], "effects": ["device_status_reviewed"]},
+    {"id": "scan_device", "cost": 3, "policy": "allowed", "preconditions": ["device_status_reviewed"], "effects": ["malware_scan_completed"]},
+    {"id": "confirm_login", "cost": 3, "policy": "allowed", "preconditions": [], "effects": ["user_contacted"]},
+    {"id": "force_password_reset", "cost": 5, "policy": "approval_required", "preconditions": ["login_history_checked"], "effects": ["password_reset_completed"]},
+    {"id": "disable_account", "cost": 8, "policy": "approval_required", "preconditions": ["login_history_checked"], "effects": ["account_disabled"]},
+    {"id": "delete_logs", "cost": null, "policy": "prohibited", "preconditions": [], "effects": ["logs_deleted"]},
+    {"id": "wipe_device", "cost": null, "policy": "prohibited", "preconditions": [], "effects": ["device_wiped"]}
+  ]
+}

@@ -29,7 +29,7 @@ Approval required	Disable an account	Request human approval; do not treat the ac
 Prohibited	Delete security logs	Reject the action
 
 
-Unknown actions are denied by default. In the initial module, policy classification is implemented; integration with the full state-transition planner is still pending.
+Unknown actions are denied by default. The planner now calls the policy checker during successor generation, before applying any simulated effects. Scenario policies must match the policy engine; the scenario cannot grant itself permission.
 Search algorithms and course concepts
 Algorithm	Search criterion	Purpose
 BFS	Fewest actions	Baseline for shortest plan by number of steps
@@ -38,7 +38,7 @@ Greedy Best-First	Estimated remaining cost, h(n)	Examine heuristic-guided search
 A*	g(n) + h(n)	Combine cumulative and estimated remaining cost
 
 
-The project draws on class material about state-space search, uninformed vs. informed search, heuristic functions, and search efficiency. We plan to begin with an admissible baseline heuristic and compare search effort as problem size increases.
+The project draws on class material about state-space search, uninformed vs. informed search, heuristic functions, and search efficiency. All four algorithms are implemented. Informed search supports the admissible h-max heuristic and a zero-heuristic baseline. Larger experiments are still to be completed.
 Team responsibilities
 Member	Primary area	Responsibilities
 Shahiba Shamshad	Security scenarios and policy engine	Define simulated incidents, action categories, approval rules, and policy tests
@@ -48,26 +48,50 @@ Jonathan Leon	Integration and evaluation	Connect modules, develop test harnesses
 
 All team members contribute to literature review, experimental validation, documentation, and presentation.
 Repository structure (current and planned)
+```text
 Secure-Agentic-AI/
-├── policy_engine.py                 # Current: basic policy checker
+├── policy_engine.py                 # Existing policy checker
+├── planning_model.py                # State, validation, transitions, h-max
+├── search_algorithms.py             # BFS, UCS, Greedy, A*
+├── planner.py                       # Python API and command-line runner
 ├── scenarios/
-│   └── suspicious_login.json       # Current: first synthetic incident
+│   └── suspicious_login.json        # Original synthetic incident, unchanged
 ├── tests/
-│   └── test_policy_engine.py       # Current: policy unit tests
-├── search_algorithms.py            # Planned: teammate module
-├── planner.py                      # Planned: state transitions and integration
-├── evaluate.py                     # Planned: metrics and comparisons
+│   ├── test_policy_engine.py        # Original policy tests
+│   ├── test_search_algorithms.py    # Algorithm correctness tests
+│   ├── test_planner.py              # Model, approval, heuristic, CLI tests
+│   └── fixtures/                    # Two small synthetic correctness examples
+├── docs/PLANNER_INTERFACE.md        # Shared interface and metric definitions
+├── evaluate.py                     # Planned: controlled experiments
 ├── results/                        # Planned: experiment outputs and figures
 └── README.md
-The planned files are not yet implemented. The repository will grow as team development progresses.
-Run the current starter module
-Prerequisite: Python 3.
-# From the repository root
-python3 policy_engine.py
+```
+`evaluate.py` and `results/` remain planned. The planner is runnable now; the test fixtures are not a finished experimental dataset.
 
-# Run policy-engine unit tests
-python3 -m unittest discover -s tests -v
-The initial checker returns one of three decisions: allow, request_approval, or deny. It does not yet implement the search algorithms or execute any security action.
+Run the planner
+
+Prerequisite: Python 3.10 or newer. Only the Python standard library is used.
+From the repository root (use `python3` or `py` instead of `python` if needed):
+
+```bash
+python planner.py --algorithm all
+python planner.py --algorithm astar --heuristic zero
+python -m unittest discover -s tests -v
+```
+
+All four algorithms should collect the original login scenario's required evidence at cost 4. Output is JSON, including actions, cost, approval information, and search metrics. All actions are simulated; no security system is contacted.
+
+Two small correctness examples:
+
+```bash
+python planner.py tests/fixtures/cost_tradeoff.json --algorithm all
+python planner.py tests/fixtures/approval_gate.json --algorithm astar
+python planner.py tests/fixtures/approval_gate.json --algorithm astar --approve force_password_reset
+```
+
+The tradeoff example has a one-action route costing 7 and a two-action route costing 2. BFS and Greedy choose the first; UCS and A* choose the second. The approval example deliberately fails without approval (exit code 1), then succeeds at cost 6 with the explicit simulated approval. Invalid input returns exit code 2.
+
+The evidence set defines the search goal. When it is reached, the runner adds a fixed recommendation to review the findings; this is an output-formatting step with no action cost, not an incident diagnosis. On failure, `pending_approvals` lists candidates found in reachable states, not a guaranteed solution or a minimum approval set. See [the planner interface](docs/PLANNER_INTERFACE.md) for details.
 Evaluation plan
 After integrating the search modules, the team will compare algorithms on:
 - Execution time

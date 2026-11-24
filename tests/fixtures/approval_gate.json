@@ -1,0 +1,11 @@
+{
+  "scenario_id": "TEST-APPROVAL-GATE",
+  "description": "Synthetic approval test only: the goal requires an explicitly approved simulated reset. This is not a recommended response to the original login incident.",
+  "initial_evidence": [],
+  "required_evidence": ["password_reset_completed"],
+  "actions": [
+    {"id": "check_login_history", "cost": 1, "policy": "allowed", "preconditions": [], "effects": ["login_history_checked"]},
+    {"id": "force_password_reset", "cost": 5, "policy": "approval_required", "preconditions": ["login_history_checked"], "effects": ["password_reset_completed"]},
+    {"id": "delete_logs", "cost": null, "policy": "prohibited", "preconditions": [], "effects": ["password_reset_completed"]}
+  ]
+}

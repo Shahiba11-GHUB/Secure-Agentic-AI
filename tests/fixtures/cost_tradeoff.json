@@ -1,0 +1,11 @@
+{
+  "scenario_id": "TEST-COST-TRADEOFF",
+  "description": "Abstract algorithm fixture, not a realistic incident: compare a costly one-step route with a cheap two-step route.",
+  "initial_evidence": [],
+  "required_evidence": ["investigation_complete"],
+  "actions": [
+    {"id": "scan_device", "cost": 7, "policy": "allowed", "preconditions": [], "effects": ["investigation_complete"]},
+    {"id": "check_login_history", "cost": 1, "policy": "allowed", "preconditions": [], "effects": ["history_checked"]},
+    {"id": "check_ip_reputation", "cost": 1, "policy": "allowed", "preconditions": ["history_checked"], "effects": ["investigation_complete"]}
+  ]
+}

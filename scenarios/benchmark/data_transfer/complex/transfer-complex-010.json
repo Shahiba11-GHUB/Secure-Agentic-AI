@@ -1,0 +1,146 @@
+{
+  "scenario_id": "TRANSFER-COMPLEX-010",
+  "scenario_name": "TRANSFER-COMPLEX-010",
+  "category": "data_transfer",
+  "complexity": "complex",
+  "description": "Synthetic data_transfer investigation with complex planning complexity.",
+  "initial_evidence": [
+    "unusual_transfer_detected"
+  ],
+  "required_evidence": [
+    "network_logs_checked",
+    "destination_ip_reviewed",
+    "data_classification_reviewed",
+    "transfer_volume_reviewed",
+    "user_activity_checked",
+    "dlp_alerts_checked",
+    "file_access_reviewed"
+  ],
+  "goal": "Collect all required simulated evidence for analyst review.",
+  "actions": [
+    {
+      "id": "check_network_logs",
+      "cost": 3,
+      "policy": "allowed",
+      "preconditions": [],
+      "effects": [
+        "network_logs_checked"
+      ]
+    },
+    {
+      "id": "review_destination_ip",
+      "cost": 2,
+      "policy": "allowed",
+      "preconditions": [
+        "network_logs_checked"
+      ],
+      "effects": [
+        "destination_ip_reviewed"
+      ]
+    },
+    {
+      "id": "review_data_classification",
+      "cost": 3,
+      "policy": "allowed",
+      "preconditions": [],
+      "effects": [
+        "data_classification_reviewed"
+      ]
+    },
+    {
+      "id": "review_transfer_volume",
+      "cost": 3,
+      "policy": "allowed",
+      "preconditions": [
+        "network_logs_checked"
+      ],
+      "effects": [
+        "transfer_volume_reviewed"
+      ]
+    },
+    {
+      "id": "review_transfer_alert",
+      "cost": 11,
+      "policy": "allowed",
+      "preconditions": [],
+      "effects": [
+        "network_logs_checked",
+        "destination_ip_reviewed",
+        "data_classification_reviewed"
+      ]
+    },
+    {
+      "id": "block_network_connection",
+      "cost": 5,
+      "policy": "approval_required",
+      "preconditions": [
+        "destination_ip_reviewed",
+        "data_classification_reviewed"
+      ],
+      "effects": [
+        "network_connection_blocked"
+      ]
+    },
+    {
+      "id": "export_confidential_data",
+      "cost": 1,
+      "policy": "prohibited",
+      "preconditions": [],
+      "effects": [
+        "confidential_data_exported"
+      ]
+    },
+    {
+      "id": "check_user_activity",
+      "cost": 1,
+      "policy": "allowed",
+      "preconditions": [
+        "network_logs_checked"
+      ],
+      "effects": [
+        "user_activity_checked"
+      ]
+    },
+    {
+      "id": "check_dlp_alerts",
+      "cost": 4,
+      "policy": "allowed",
+      "preconditions": [
+        "data_classification_reviewed"
+      ],
+      "effects": [
+        "dlp_alerts_checked"
+      ]
+    },
+    {
+      "id": "review_file_access_logs",
+      "cost": 5,
+      "policy": "allowed",
+      "preconditions": [
+        "user_activity_checked"
+      ],
+      "effects": [
+        "file_access_reviewed"
+      ]
+    },
+    {
+      "id": "correlate_transfer_evidence",
+      "cost": 10,
+      "policy": "allowed",
+      "preconditions": [
+        "network_logs_checked",
+        "destination_ip_reviewed",
+        "data_classification_reviewed"
+      ],
+      "effects": [
+        "transfer_volume_reviewed",
+        "user_activity_checked",
+        "dlp_alerts_checked",
+        "file_access_reviewed"
+      ]
+    }
+  ],
+  "generation_seed": 42,
+  "simulation_only": true,
+  "cost_relationship": "bundle_expensive"
+}

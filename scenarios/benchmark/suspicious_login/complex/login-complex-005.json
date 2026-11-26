@@ -1,0 +1,144 @@
+{
+  "scenario_id": "LOGIN-COMPLEX-005",
+  "scenario_name": "LOGIN-COMPLEX-005",
+  "category": "suspicious_login",
+  "complexity": "complex",
+  "description": "Synthetic suspicious_login investigation with complex planning complexity.",
+  "initial_evidence": [
+    "unusual_location_alert"
+  ],
+  "required_evidence": [
+    "login_history_checked",
+    "ip_reputation_checked",
+    "device_status_reviewed",
+    "mfa_activity_checked",
+    "account_permissions_reviewed",
+    "session_activity_reviewed",
+    "user_contacted"
+  ],
+  "goal": "Collect all required simulated evidence for analyst review.",
+  "actions": [
+    {
+      "id": "check_login_history",
+      "cost": 3,
+      "policy": "allowed",
+      "preconditions": [],
+      "effects": [
+        "login_history_checked"
+      ]
+    },
+    {
+      "id": "check_ip_reputation",
+      "cost": 1,
+      "policy": "allowed",
+      "preconditions": [],
+      "effects": [
+        "ip_reputation_checked"
+      ]
+    },
+    {
+      "id": "review_device_status",
+      "cost": 2,
+      "policy": "allowed",
+      "preconditions": [],
+      "effects": [
+        "device_status_reviewed"
+      ]
+    },
+    {
+      "id": "check_mfa_activity",
+      "cost": 3,
+      "policy": "allowed",
+      "preconditions": [
+        "login_history_checked"
+      ],
+      "effects": [
+        "mfa_activity_checked"
+      ]
+    },
+    {
+      "id": "review_identity_alert",
+      "cost": 6,
+      "policy": "allowed",
+      "preconditions": [],
+      "effects": [
+        "login_history_checked",
+        "ip_reputation_checked",
+        "device_status_reviewed"
+      ]
+    },
+    {
+      "id": "revoke_user_sessions",
+      "cost": 5,
+      "policy": "approval_required",
+      "preconditions": [
+        "login_history_checked",
+        "ip_reputation_checked"
+      ],
+      "effects": [
+        "sessions_revoked"
+      ]
+    },
+    {
+      "id": "delete_logs",
+      "cost": 1,
+      "policy": "prohibited",
+      "preconditions": [],
+      "effects": [
+        "logs_deleted"
+      ]
+    },
+    {
+      "id": "review_account_permissions",
+      "cost": 4,
+      "policy": "allowed",
+      "preconditions": [
+        "login_history_checked"
+      ],
+      "effects": [
+        "account_permissions_reviewed"
+      ]
+    },
+    {
+      "id": "review_session_activity",
+      "cost": 4,
+      "policy": "allowed",
+      "preconditions": [
+        "account_permissions_reviewed"
+      ],
+      "effects": [
+        "session_activity_reviewed"
+      ]
+    },
+    {
+      "id": "confirm_login",
+      "cost": 5,
+      "policy": "allowed",
+      "preconditions": [
+        "login_history_checked"
+      ],
+      "effects": [
+        "user_contacted"
+      ]
+    },
+    {
+      "id": "correlate_identity_evidence",
+      "cost": 10,
+      "policy": "allowed",
+      "preconditions": [
+        "login_history_checked",
+        "ip_reputation_checked",
+        "device_status_reviewed"
+      ],
+      "effects": [
+        "mfa_activity_checked",
+        "account_permissions_reviewed",
+        "session_activity_reviewed",
+        "user_contacted"
+      ]
+    }
+  ],
+  "generation_seed": 42,
+  "simulation_only": true,
+  "cost_relationship": "equal_cost"
+}

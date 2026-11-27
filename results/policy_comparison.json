@@ -1,0 +1,471 @@
+{
+  "approval_gate_comparison": [
+    {
+      "scenario_id": "LOGIN-APPROVAL-001",
+      "algorithm": "bfs",
+      "approval_action": "revoke_user_sessions",
+      "secure_no_approval_goal": false,
+      "secure_no_approval_pending": [
+        "revoke_user_sessions"
+      ],
+      "secure_with_approval_goal": true,
+      "secure_with_approval_cost": 12.0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 12.0,
+      "unconstrained_violations": 1,
+      "unconstrained_unapproved": [
+        "revoke_user_sessions"
+      ]
+    },
+    {
+      "scenario_id": "LOGIN-APPROVAL-001",
+      "algorithm": "ucs",
+      "approval_action": "revoke_user_sessions",
+      "secure_no_approval_goal": false,
+      "secure_no_approval_pending": [
+        "revoke_user_sessions"
+      ],
+      "secure_with_approval_goal": true,
+      "secure_with_approval_cost": 9.0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 9.0,
+      "unconstrained_violations": 1,
+      "unconstrained_unapproved": [
+        "revoke_user_sessions"
+      ]
+    },
+    {
+      "scenario_id": "LOGIN-APPROVAL-001",
+      "algorithm": "greedy",
+      "approval_action": "revoke_user_sessions",
+      "secure_no_approval_goal": false,
+      "secure_no_approval_pending": [
+        "revoke_user_sessions"
+      ],
+      "secure_with_approval_goal": true,
+      "secure_with_approval_cost": 12.0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 12.0,
+      "unconstrained_violations": 1,
+      "unconstrained_unapproved": [
+        "revoke_user_sessions"
+      ]
+    },
+    {
+      "scenario_id": "LOGIN-APPROVAL-001",
+      "algorithm": "astar",
+      "approval_action": "revoke_user_sessions",
+      "secure_no_approval_goal": false,
+      "secure_no_approval_pending": [
+        "revoke_user_sessions"
+      ],
+      "secure_with_approval_goal": true,
+      "secure_with_approval_cost": 9.0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 9.0,
+      "unconstrained_violations": 1,
+      "unconstrained_unapproved": [
+        "revoke_user_sessions"
+      ]
+    },
+    {
+      "scenario_id": "PHISH-APPROVAL-001",
+      "algorithm": "bfs",
+      "approval_action": "quarantine_email",
+      "secure_no_approval_goal": false,
+      "secure_no_approval_pending": [
+        "quarantine_email"
+      ],
+      "secure_with_approval_goal": true,
+      "secure_with_approval_cost": 12.0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 12.0,
+      "unconstrained_violations": 1,
+      "unconstrained_unapproved": [
+        "quarantine_email"
+      ]
+    },
+    {
+      "scenario_id": "PHISH-APPROVAL-001",
+      "algorithm": "ucs",
+      "approval_action": "quarantine_email",
+      "secure_no_approval_goal": false,
+      "secure_no_approval_pending": [
+        "quarantine_email"
+      ],
+      "secure_with_approval_goal": true,
+      "secure_with_approval_cost": 8.0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 8.0,
+      "unconstrained_violations": 1,
+      "unconstrained_unapproved": [
+        "quarantine_email"
+      ]
+    },
+    {
+      "scenario_id": "PHISH-APPROVAL-001",
+      "algorithm": "greedy",
+      "approval_action": "quarantine_email",
+      "secure_no_approval_goal": false,
+      "secure_no_approval_pending": [
+        "quarantine_email"
+      ],
+      "secure_with_approval_goal": true,
+      "secure_with_approval_cost": 12.0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 12.0,
+      "unconstrained_violations": 1,
+      "unconstrained_unapproved": [
+        "quarantine_email"
+      ]
+    },
+    {
+      "scenario_id": "PHISH-APPROVAL-001",
+      "algorithm": "astar",
+      "approval_action": "quarantine_email",
+      "secure_no_approval_goal": false,
+      "secure_no_approval_pending": [
+        "quarantine_email"
+      ],
+      "secure_with_approval_goal": true,
+      "secure_with_approval_cost": 8.0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 8.0,
+      "unconstrained_violations": 1,
+      "unconstrained_unapproved": [
+        "quarantine_email"
+      ]
+    },
+    {
+      "scenario_id": "TRANSFER-APPROVAL-001",
+      "algorithm": "bfs",
+      "approval_action": "block_network_connection",
+      "secure_no_approval_goal": false,
+      "secure_no_approval_pending": [
+        "block_network_connection"
+      ],
+      "secure_with_approval_goal": true,
+      "secure_with_approval_cost": 14.0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 14.0,
+      "unconstrained_violations": 1,
+      "unconstrained_unapproved": [
+        "block_network_connection"
+      ]
+    },
+    {
+      "scenario_id": "TRANSFER-APPROVAL-001",
+      "algorithm": "ucs",
+      "approval_action": "block_network_connection",
+      "secure_no_approval_goal": false,
+      "secure_no_approval_pending": [
+        "block_network_connection"
+      ],
+      "secure_with_approval_goal": true,
+      "secure_with_approval_cost": 9.0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 9.0,
+      "unconstrained_violations": 1,
+      "unconstrained_unapproved": [
+        "block_network_connection"
+      ]
+    },
+    {
+      "scenario_id": "TRANSFER-APPROVAL-001",
+      "algorithm": "greedy",
+      "approval_action": "block_network_connection",
+      "secure_no_approval_goal": false,
+      "secure_no_approval_pending": [
+        "block_network_connection"
+      ],
+      "secure_with_approval_goal": true,
+      "secure_with_approval_cost": 14.0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 14.0,
+      "unconstrained_violations": 1,
+      "unconstrained_unapproved": [
+        "block_network_connection"
+      ]
+    },
+    {
+      "scenario_id": "TRANSFER-APPROVAL-001",
+      "algorithm": "astar",
+      "approval_action": "block_network_connection",
+      "secure_no_approval_goal": false,
+      "secure_no_approval_pending": [
+        "block_network_connection"
+      ],
+      "secure_with_approval_goal": true,
+      "secure_with_approval_cost": 9.0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 9.0,
+      "unconstrained_violations": 1,
+      "unconstrained_unapproved": [
+        "block_network_connection"
+      ]
+    }
+  ],
+  "prohibited_shortcut_comparison": [
+    {
+      "scenario_id": "POLICY-SHORTCUT-LOGIN",
+      "algorithm": "bfs",
+      "secure_goal": true,
+      "secure_cost": 7.0,
+      "secure_actions": [
+        "check_ip_reputation",
+        "check_login_history",
+        "review_device_status"
+      ],
+      "secure_violations": 0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 1.0,
+      "unconstrained_actions": [
+        "bypass_security_policy"
+      ],
+      "unconstrained_prohibited_used": [
+        "bypass_security_policy"
+      ],
+      "unconstrained_violations": 1
+    },
+    {
+      "scenario_id": "POLICY-SHORTCUT-LOGIN",
+      "algorithm": "ucs",
+      "secure_goal": true,
+      "secure_cost": 7.0,
+      "secure_actions": [
+        "check_ip_reputation",
+        "check_login_history",
+        "review_device_status"
+      ],
+      "secure_violations": 0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 1.0,
+      "unconstrained_actions": [
+        "bypass_security_policy"
+      ],
+      "unconstrained_prohibited_used": [
+        "bypass_security_policy"
+      ],
+      "unconstrained_violations": 1
+    },
+    {
+      "scenario_id": "POLICY-SHORTCUT-LOGIN",
+      "algorithm": "greedy",
+      "secure_goal": true,
+      "secure_cost": 7.0,
+      "secure_actions": [
+        "review_device_status",
+        "check_ip_reputation",
+        "check_login_history"
+      ],
+      "secure_violations": 0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 1.0,
+      "unconstrained_actions": [
+        "bypass_security_policy"
+      ],
+      "unconstrained_prohibited_used": [
+        "bypass_security_policy"
+      ],
+      "unconstrained_violations": 1
+    },
+    {
+      "scenario_id": "POLICY-SHORTCUT-LOGIN",
+      "algorithm": "astar",
+      "secure_goal": true,
+      "secure_cost": 7.0,
+      "secure_actions": [
+        "check_ip_reputation",
+        "check_login_history",
+        "review_device_status"
+      ],
+      "secure_violations": 0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 1.0,
+      "unconstrained_actions": [
+        "bypass_security_policy"
+      ],
+      "unconstrained_prohibited_used": [
+        "bypass_security_policy"
+      ],
+      "unconstrained_violations": 1
+    },
+    {
+      "scenario_id": "POLICY-SHORTCUT-PHISH",
+      "algorithm": "bfs",
+      "secure_goal": true,
+      "secure_cost": 7.0,
+      "secure_actions": [
+        "check_email_headers",
+        "check_url_reputation",
+        "verify_sender_domain"
+      ],
+      "secure_violations": 0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 1.0,
+      "unconstrained_actions": [
+        "delete_investigation_evidence"
+      ],
+      "unconstrained_prohibited_used": [
+        "delete_investigation_evidence"
+      ],
+      "unconstrained_violations": 1
+    },
+    {
+      "scenario_id": "POLICY-SHORTCUT-PHISH",
+      "algorithm": "ucs",
+      "secure_goal": true,
+      "secure_cost": 7.0,
+      "secure_actions": [
+        "check_email_headers",
+        "verify_sender_domain",
+        "check_url_reputation"
+      ],
+      "secure_violations": 0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 1.0,
+      "unconstrained_actions": [
+        "delete_investigation_evidence"
+      ],
+      "unconstrained_prohibited_used": [
+        "delete_investigation_evidence"
+      ],
+      "unconstrained_violations": 1
+    },
+    {
+      "scenario_id": "POLICY-SHORTCUT-PHISH",
+      "algorithm": "greedy",
+      "secure_goal": true,
+      "secure_cost": 7.0,
+      "secure_actions": [
+        "check_email_headers",
+        "check_url_reputation",
+        "verify_sender_domain"
+      ],
+      "secure_violations": 0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 1.0,
+      "unconstrained_actions": [
+        "delete_investigation_evidence"
+      ],
+      "unconstrained_prohibited_used": [
+        "delete_investigation_evidence"
+      ],
+      "unconstrained_violations": 1
+    },
+    {
+      "scenario_id": "POLICY-SHORTCUT-PHISH",
+      "algorithm": "astar",
+      "secure_goal": true,
+      "secure_cost": 7.0,
+      "secure_actions": [
+        "check_email_headers",
+        "check_url_reputation",
+        "verify_sender_domain"
+      ],
+      "secure_violations": 0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 1.0,
+      "unconstrained_actions": [
+        "delete_investigation_evidence"
+      ],
+      "unconstrained_prohibited_used": [
+        "delete_investigation_evidence"
+      ],
+      "unconstrained_violations": 1
+    },
+    {
+      "scenario_id": "POLICY-SHORTCUT-TRANSFER",
+      "algorithm": "bfs",
+      "secure_goal": true,
+      "secure_cost": 7.0,
+      "secure_actions": [
+        "check_network_logs",
+        "review_data_classification",
+        "review_destination_ip"
+      ],
+      "secure_violations": 0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 1.0,
+      "unconstrained_actions": [
+        "export_confidential_data"
+      ],
+      "unconstrained_prohibited_used": [
+        "export_confidential_data"
+      ],
+      "unconstrained_violations": 1
+    },
+    {
+      "scenario_id": "POLICY-SHORTCUT-TRANSFER",
+      "algorithm": "ucs",
+      "secure_goal": true,
+      "secure_cost": 7.0,
+      "secure_actions": [
+        "check_network_logs",
+        "review_destination_ip",
+        "review_data_classification"
+      ],
+      "secure_violations": 0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 1.0,
+      "unconstrained_actions": [
+        "export_confidential_data"
+      ],
+      "unconstrained_prohibited_used": [
+        "export_confidential_data"
+      ],
+      "unconstrained_violations": 1
+    },
+    {
+      "scenario_id": "POLICY-SHORTCUT-TRANSFER",
+      "algorithm": "greedy",
+      "secure_goal": true,
+      "secure_cost": 7.0,
+      "secure_actions": [
+        "check_network_logs",
+        "review_data_classification",
+        "review_destination_ip"
+      ],
+      "secure_violations": 0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 1.0,
+      "unconstrained_actions": [
+        "export_confidential_data"
+      ],
+      "unconstrained_prohibited_used": [
+        "export_confidential_data"
+      ],
+      "unconstrained_violations": 1
+    },
+    {
+      "scenario_id": "POLICY-SHORTCUT-TRANSFER",
+      "algorithm": "astar",
+      "secure_goal": true,
+      "secure_cost": 7.0,
+      "secure_actions": [
+        "check_network_logs",
+        "review_data_classification",
+        "review_destination_ip"
+      ],
+      "secure_violations": 0,
+      "unconstrained_goal": true,
+      "unconstrained_cost": 1.0,
+      "unconstrained_actions": [
+        "export_confidential_data"
+      ],
+      "unconstrained_prohibited_used": [
+        "export_confidential_data"
+      ],
+      "unconstrained_violations": 1
+    }
+  ],
+  "totals": {
+    "approval_runs": 12,
+    "secure_blocked_without_approval": 12,
+    "secure_succeeded_with_approval": 12,
+    "unconstrained_approval_violations": 12,
+    "shortcut_runs": 12,
+    "secure_shortcut_violations": 0,
+    "unconstrained_shortcut_violations": 12
+  }
+}

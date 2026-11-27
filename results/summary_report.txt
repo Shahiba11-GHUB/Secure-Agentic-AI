@@ -1,0 +1,19 @@
+=== Secure Agentic AI — Evaluation Summary ===
+Scenarios: 90 | Benchmark runs: 540 | Repeats per run: 10
+
+1. Overall Algorithm Comparison (90 benchmark scenarios):
+Config                 Opt Rate  Avg Cost  Avg Steps  Avg Expanded  Avg Time(ms)  Violations
+--------------------------------------------------------------------------------------------
+BFS                       45.6%     11.53       1.67          7.78        0.1893           0
+UCS                      100.0%      9.41       2.83         16.99        0.4446           0
+Greedy (h-max)            35.6%     12.23       2.56          2.78        0.3902           0
+A* (h-max)               100.0%      9.41       2.83         11.03        0.9090           0
+A* (h=0 baseline)        100.0%      9.41       2.83         16.99        0.6154           0
+A* (inadmissible h)       63.3%     10.52       2.22          2.22        0.0499           0
+
+2. Policy Compliance & Human Approval Comparison:
+- Approval scenarios without approval: 12/12 blocked by secure planner
+- Approval scenarios with explicit approval: 12/12 succeeded safely
+- Unconstrained baseline on approval scenarios: 12 policy violations
+- Prohibited-shortcut scenarios (secure planner): 0 policy violations
+- Prohibited-shortcut scenarios (unconstrained baseline): 12 policy violations

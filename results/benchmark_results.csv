@@ -1,0 +1,541 @@
+scenario_id,category,complexity,cost_relationship,num_actions,num_required_evidence,config,label,goal_reached,plan_length,total_cost,nodes_expanded,nodes_generated,frontier_peak,required_approvals,policy_violations,time_mean_ms,time_median_ms,time_min_ms,time_max_ms,time_stdev_ms,actions
+TRANSFER-COMPLEX-001,data_transfer,complex,bundle_cheaper,11,7,bfs,BFS,True,2,9.0,11,42,13,0,0,0.2495,0.2445,0.2331,0.2874,0.0162,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-001,data_transfer,complex,bundle_cheaper,11,7,ucs,UCS,True,2,9.0,20,76,14,0,0,0.5468,0.4533,0.4452,1.0089,0.1894,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-001,data_transfer,complex,bundle_cheaper,11,7,greedy,Greedy (h-max),True,2,9.0,2,7,6,0,0,0.2758,0.2749,0.2718,0.2817,0.0034,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-001,data_transfer,complex,bundle_cheaper,11,7,astar,A* (h-max),True,2,9.0,3,12,9,0,0,0.4421,0.4355,0.4287,0.5128,0.0252,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-001,data_transfer,complex,bundle_cheaper,11,7,astar_zero,A* (h=0 baseline),True,2,9.0,20,76,14,0,0,0.4572,0.4564,0.4467,0.4769,0.0092,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-001,data_transfer,complex,bundle_cheaper,11,7,astar_over,A* (inadmissible h),True,2,9.0,2,7,6,0,0,0.0438,0.0392,0.0373,0.0677,0.0102,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-002,data_transfer,complex,bundle_cheaper,11,7,bfs,BFS,True,2,14.0,11,42,13,0,0,0.2645,0.2438,0.2316,0.4467,0.0648,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-002,data_transfer,complex,bundle_cheaper,11,7,ucs,UCS,True,2,14.0,29,105,19,0,0,0.6799,0.6766,0.6538,0.7449,0.0265,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-002,data_transfer,complex,bundle_cheaper,11,7,greedy,Greedy (h-max),True,2,14.0,2,7,6,0,0,0.3256,0.3213,0.2869,0.3818,0.0301,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-002,data_transfer,complex,bundle_cheaper,11,7,astar,A* (h-max),True,2,14.0,10,42,17,0,0,1.0498,1.0125,0.9854,1.2417,0.0813,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-002,data_transfer,complex,bundle_cheaper,11,7,astar_zero,A* (h=0 baseline),True,2,14.0,29,105,19,0,0,0.7004,0.6836,0.6564,0.8178,0.0485,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-002,data_transfer,complex,bundle_cheaper,11,7,astar_over,A* (inadmissible h),True,2,14.0,2,7,6,0,0,0.0401,0.0389,0.0383,0.0497,0.0034,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-003,data_transfer,complex,bundle_cheaper,11,7,bfs,BFS,True,2,11.0,11,42,13,0,0,0.2414,0.2403,0.231,0.2561,0.0074,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-003,data_transfer,complex,bundle_cheaper,11,7,ucs,UCS,True,2,11.0,20,76,20,0,0,0.4654,0.4616,0.4525,0.5033,0.0148,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-003,data_transfer,complex,bundle_cheaper,11,7,greedy,Greedy (h-max),True,2,11.0,2,7,6,0,0,0.2844,0.2747,0.2661,0.3445,0.0254,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-003,data_transfer,complex,bundle_cheaper,11,7,astar,A* (h-max),True,2,11.0,5,20,12,0,0,0.6365,0.6202,0.6151,0.7513,0.0414,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-003,data_transfer,complex,bundle_cheaper,11,7,astar_zero,A* (h=0 baseline),True,2,11.0,20,76,20,0,0,0.4685,0.4636,0.4483,0.4972,0.0161,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-003,data_transfer,complex,bundle_cheaper,11,7,astar_over,A* (inadmissible h),True,2,11.0,2,7,6,0,0,0.0398,0.039,0.0382,0.0471,0.0026,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-004,data_transfer,complex,equal_cost,11,7,bfs,BFS,True,2,7.0,11,42,13,0,0,0.2532,0.2393,0.2361,0.3666,0.0401,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-004,data_transfer,complex,equal_cost,11,7,ucs,UCS,True,2,7.0,21,80,17,0,0,0.488,0.4867,0.4653,0.5257,0.0191,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-004,data_transfer,complex,equal_cost,11,7,greedy,Greedy (h-max),True,2,7.0,2,7,6,0,0,0.2748,0.2725,0.2616,0.3153,0.0161,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-004,data_transfer,complex,equal_cost,11,7,astar,A* (h-max),True,2,7.0,7,29,13,0,0,0.7561,0.7506,0.7403,0.7951,0.0158,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-004,data_transfer,complex,equal_cost,11,7,astar_zero,A* (h=0 baseline),True,2,7.0,21,80,17,0,0,0.4832,0.4851,0.4704,0.4978,0.0104,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-004,data_transfer,complex,equal_cost,11,7,astar_over,A* (inadmissible h),True,2,7.0,2,7,6,0,0,0.0403,0.0391,0.0376,0.0464,0.0031,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-005,data_transfer,complex,equal_cost,11,7,bfs,BFS,True,2,11.0,11,42,13,0,0,0.2352,0.2349,0.2295,0.2413,0.0042,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-005,data_transfer,complex,equal_cost,11,7,ucs,UCS,True,2,11.0,27,100,18,0,0,0.6399,0.6207,0.6082,0.8134,0.0614,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-005,data_transfer,complex,equal_cost,11,7,greedy,Greedy (h-max),True,4,13.0,7,30,16,0,0,0.8595,0.8612,0.8347,0.8889,0.0175,check_network_logs;check_user_activity;review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-005,data_transfer,complex,equal_cost,11,7,astar,A* (h-max),True,2,11.0,10,42,19,0,0,1.1123,1.0894,1.0788,1.2663,0.057,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-005,data_transfer,complex,equal_cost,11,7,astar_zero,A* (h=0 baseline),True,2,11.0,27,100,18,0,0,0.6291,0.6196,0.6147,0.683,0.0213,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-005,data_transfer,complex,equal_cost,11,7,astar_over,A* (inadmissible h),True,2,11.0,2,7,6,0,0,0.0498,0.041,0.0386,0.102,0.02,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-006,data_transfer,complex,equal_cost,11,7,bfs,BFS,True,2,11.0,11,42,13,0,0,0.4888,0.3694,0.3455,1.4551,0.3418,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-006,data_transfer,complex,equal_cost,11,7,ucs,UCS,True,2,11.0,31,111,14,0,0,1.1143,1.1149,1.0697,1.1504,0.0263,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-006,data_transfer,complex,equal_cost,11,7,greedy,Greedy (h-max),True,7,14.0,7,27,15,0,0,1.4941,1.545,1.2544,1.6807,0.1562,check_network_logs;check_user_activity;review_data_classification;review_transfer_volume;check_dlp_alerts;review_file_access_logs;review_destination_ip
+TRANSFER-COMPLEX-006,data_transfer,complex,equal_cost,11,7,astar,A* (h-max),True,2,11.0,18,70,18,0,0,2.8228,2.4787,1.9385,4.5881,0.9744,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-006,data_transfer,complex,equal_cost,11,7,astar_zero,A* (h=0 baseline),True,2,11.0,31,111,14,0,0,1.0577,0.8298,0.7074,1.8171,0.4395,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-006,data_transfer,complex,equal_cost,11,7,astar_over,A* (inadmissible h),True,2,11.0,2,7,6,0,0,0.0892,0.0751,0.0391,0.1743,0.0483,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-007,data_transfer,complex,bundle_expensive,11,7,bfs,BFS,True,2,13.0,11,42,13,0,0,0.4864,0.4898,0.46,0.51,0.015,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-007,data_transfer,complex,bundle_expensive,11,7,ucs,UCS,True,4,11.0,25,94,20,0,0,1.1192,1.1214,1.052,1.2036,0.0422,review_data_classification;check_network_logs;review_destination_ip;correlate_transfer_evidence
+TRANSFER-COMPLEX-007,data_transfer,complex,bundle_expensive,11,7,greedy,Greedy (h-max),True,2,13.0,2,7,6,0,0,0.294,0.2668,0.2609,0.5001,0.0732,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-007,data_transfer,complex,bundle_expensive,11,7,astar,A* (h-max),True,4,11.0,10,42,19,0,0,1.3674,1.2769,1.0633,2.1021,0.3377,check_network_logs;review_data_classification;review_destination_ip;correlate_transfer_evidence
+TRANSFER-COMPLEX-007,data_transfer,complex,bundle_expensive,11,7,astar_zero,A* (h=0 baseline),True,4,11.0,25,94,20,0,0,0.58,0.58,0.5694,0.5899,0.0074,review_data_classification;check_network_logs;review_destination_ip;correlate_transfer_evidence
+TRANSFER-COMPLEX-007,data_transfer,complex,bundle_expensive,11,7,astar_over,A* (inadmissible h),True,2,13.0,2,7,6,0,0,0.0442,0.0387,0.0377,0.0894,0.0159,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-008,data_transfer,complex,bundle_expensive,11,7,bfs,BFS,True,2,17.0,11,42,13,0,0,0.2471,0.238,0.2321,0.3016,0.0213,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-008,data_transfer,complex,bundle_expensive,11,7,ucs,UCS,True,4,12.0,24,90,19,0,0,0.5586,0.556,0.5365,0.5926,0.0156,check_network_logs;review_data_classification;review_destination_ip;correlate_transfer_evidence
+TRANSFER-COMPLEX-008,data_transfer,complex,bundle_expensive,11,7,greedy,Greedy (h-max),True,2,17.0,2,7,6,0,0,0.2745,0.2727,0.2686,0.287,0.0063,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-008,data_transfer,complex,bundle_expensive,11,7,astar,A* (h-max),True,4,12.0,9,37,18,0,0,1.0363,1.0301,1.0133,1.0801,0.0195,check_network_logs;review_data_classification;review_destination_ip;correlate_transfer_evidence
+TRANSFER-COMPLEX-008,data_transfer,complex,bundle_expensive,11,7,astar_zero,A* (h=0 baseline),True,4,12.0,24,90,19,0,0,0.5694,0.5615,0.5522,0.6436,0.027,check_network_logs;review_data_classification;review_destination_ip;correlate_transfer_evidence
+TRANSFER-COMPLEX-008,data_transfer,complex,bundle_expensive,11,7,astar_over,A* (inadmissible h),True,7,19.0,7,25,15,0,0,0.1328,0.1323,0.1299,0.1372,0.0025,check_network_logs;review_transfer_volume;check_user_activity;review_data_classification;check_dlp_alerts;review_destination_ip;correlate_transfer_evidence
+TRANSFER-COMPLEX-009,data_transfer,complex,bundle_expensive,11,7,bfs,BFS,True,2,24.0,11,42,13,0,0,0.2439,0.2401,0.2284,0.2855,0.016,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-009,data_transfer,complex,bundle_expensive,11,7,ucs,UCS,True,4,19.0,34,119,18,0,0,0.782,0.7723,0.7621,0.8415,0.0232,check_network_logs;review_destination_ip;review_data_classification;correlate_transfer_evidence
+TRANSFER-COMPLEX-009,data_transfer,complex,bundle_expensive,11,7,greedy,Greedy (h-max),True,7,23.0,7,27,15,0,0,0.8339,0.8048,0.7861,1.0251,0.073,check_network_logs;check_user_activity;review_data_classification;review_file_access_logs;check_dlp_alerts;review_transfer_volume;review_destination_ip
+TRANSFER-COMPLEX-009,data_transfer,complex,bundle_expensive,11,7,astar,A* (h-max),True,4,19.0,21,82,20,0,0,1.6758,1.5985,1.5504,2.052,0.1638,check_network_logs;review_destination_ip;review_data_classification;correlate_transfer_evidence
+TRANSFER-COMPLEX-009,data_transfer,complex,bundle_expensive,11,7,astar_zero,A* (h=0 baseline),True,4,19.0,34,119,18,0,0,0.8115,0.7908,0.7753,0.8985,0.0457,check_network_logs;review_destination_ip;review_data_classification;correlate_transfer_evidence
+TRANSFER-COMPLEX-009,data_transfer,complex,bundle_expensive,11,7,astar_over,A* (inadmissible h),True,7,23.0,7,23,12,0,0,0.1336,0.1303,0.1265,0.1474,0.0074,check_network_logs;review_destination_ip;review_transfer_volume;check_user_activity;review_data_classification;check_dlp_alerts;review_file_access_logs
+TRANSFER-COMPLEX-010,data_transfer,complex,bundle_expensive,11,7,bfs,BFS,True,2,21.0,11,42,13,0,0,0.2371,0.2349,0.2312,0.2542,0.0067,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-010,data_transfer,complex,bundle_expensive,11,7,ucs,UCS,True,4,18.0,36,123,20,0,0,0.8278,0.8185,0.8022,0.8998,0.0276,check_network_logs;review_destination_ip;review_data_classification;correlate_transfer_evidence
+TRANSFER-COMPLEX-010,data_transfer,complex,bundle_expensive,11,7,greedy,Greedy (h-max),True,2,21.0,2,7,6,0,0,0.2739,0.2691,0.2635,0.3122,0.0146,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-COMPLEX-010,data_transfer,complex,bundle_expensive,11,7,astar,A* (h-max),True,4,18.0,25,94,21,0,0,1.7974,1.7543,1.7159,2.1908,0.1397,check_network_logs;review_data_classification;review_destination_ip;correlate_transfer_evidence
+TRANSFER-COMPLEX-010,data_transfer,complex,bundle_expensive,11,7,astar_zero,A* (h=0 baseline),True,4,18.0,36,123,20,0,0,0.9005,0.8262,0.8203,1.4376,0.1908,check_network_logs;review_destination_ip;review_data_classification;correlate_transfer_evidence
+TRANSFER-COMPLEX-010,data_transfer,complex,bundle_expensive,11,7,astar_over,A* (inadmissible h),True,2,21.0,2,7,6,0,0,0.0397,0.0396,0.0384,0.042,0.0012,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-001,data_transfer,medium,bundle_cheaper,9,5,bfs,BFS,True,2,12.0,9,31,9,0,0,0.1806,0.1751,0.172,0.2095,0.0122,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-001,data_transfer,medium,bundle_cheaper,9,5,ucs,UCS,True,3,9.0,15,48,9,0,0,0.2994,0.2969,0.2868,0.3158,0.0098,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-001,data_transfer,medium,bundle_cheaper,9,5,greedy,Greedy (h-max),True,4,10.0,4,15,11,0,0,0.4066,0.4029,0.3961,0.4412,0.0132,check_network_logs;review_transfer_volume;check_user_activity;review_transfer_alert
+TRANSFER-MEDIUM-001,data_transfer,medium,bundle_cheaper,9,5,astar,A* (h-max),True,3,9.0,15,48,9,0,0,0.706,0.7026,0.6816,0.7519,0.0225,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-001,data_transfer,medium,bundle_cheaper,9,5,astar_zero,A* (h=0 baseline),True,3,9.0,15,48,9,0,0,0.2968,0.2952,0.2874,0.3152,0.0085,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-001,data_transfer,medium,bundle_cheaper,9,5,astar_over,A* (inadmissible h),True,3,9.0,3,8,5,0,0,0.0548,0.0518,0.0506,0.069,0.006,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-002,data_transfer,medium,bundle_cheaper,9,5,bfs,BFS,True,2,18.0,9,31,9,0,0,0.1739,0.1727,0.1691,0.1819,0.005,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-002,data_transfer,medium,bundle_cheaper,9,5,ucs,UCS,True,3,15.0,17,52,11,0,0,0.3362,0.3356,0.3262,0.3496,0.0069,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-002,data_transfer,medium,bundle_cheaper,9,5,greedy,Greedy (h-max),True,4,17.0,4,14,9,0,0,0.4035,0.3686,0.3556,0.5765,0.0708,check_network_logs;review_transfer_volume;review_transfer_alert;check_user_activity
+TRANSFER-MEDIUM-002,data_transfer,medium,bundle_cheaper,9,5,astar,A* (h-max),True,3,15.0,15,48,11,0,0,0.7905,0.7803,0.7689,0.8394,0.0251,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-002,data_transfer,medium,bundle_cheaper,9,5,astar_zero,A* (h=0 baseline),True,3,15.0,17,52,11,0,0,0.3485,0.3362,0.3295,0.4481,0.0357,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-002,data_transfer,medium,bundle_cheaper,9,5,astar_over,A* (inadmissible h),True,3,15.0,3,8,5,0,0,0.0556,0.0537,0.0503,0.0677,0.0059,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-003,data_transfer,medium,bundle_cheaper,9,5,bfs,BFS,True,2,12.0,9,31,9,0,0,0.1792,0.1725,0.1683,0.2224,0.0169,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-003,data_transfer,medium,bundle_cheaper,9,5,ucs,UCS,True,2,12.0,15,48,9,0,0,0.3096,0.2944,0.2896,0.4446,0.0476,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-003,data_transfer,medium,bundle_cheaper,9,5,greedy,Greedy (h-max),True,2,12.0,3,11,8,0,0,0.2971,0.2965,0.2915,0.3047,0.005,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-003,data_transfer,medium,bundle_cheaper,9,5,astar,A* (h-max),True,2,12.0,8,29,9,0,0,0.5115,0.5046,0.4941,0.5892,0.0277,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-003,data_transfer,medium,bundle_cheaper,9,5,astar_zero,A* (h=0 baseline),True,2,12.0,15,48,9,0,0,0.3007,0.2973,0.2869,0.3392,0.015,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-003,data_transfer,medium,bundle_cheaper,9,5,astar_over,A* (inadmissible h),True,2,12.0,2,6,5,0,0,0.0346,0.0341,0.0333,0.0378,0.0013,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-004,data_transfer,medium,equal_cost,9,5,bfs,BFS,True,2,13.0,9,31,9,0,0,0.1739,0.1718,0.17,0.186,0.0049,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-004,data_transfer,medium,equal_cost,9,5,ucs,UCS,True,5,12.0,17,52,10,0,0,0.3364,0.3347,0.3283,0.3578,0.0089,review_data_classification;check_network_logs;check_user_activity;review_destination_ip;review_transfer_volume
+TRANSFER-MEDIUM-004,data_transfer,medium,equal_cost,9,5,greedy,Greedy (h-max),True,5,12.0,5,17,9,0,0,0.3995,0.3988,0.3909,0.4139,0.0079,check_network_logs;review_transfer_volume;review_destination_ip;check_user_activity;review_data_classification
+TRANSFER-MEDIUM-004,data_transfer,medium,equal_cost,9,5,astar,A* (h-max),True,5,12.0,17,52,10,0,0,0.7823,0.7777,0.754,0.814,0.0187,check_network_logs;review_data_classification;check_user_activity;review_destination_ip;review_transfer_volume
+TRANSFER-MEDIUM-004,data_transfer,medium,equal_cost,9,5,astar_zero,A* (h=0 baseline),True,5,12.0,17,52,10,0,0,0.3296,0.3288,0.3195,0.3397,0.0065,review_data_classification;check_network_logs;check_user_activity;review_destination_ip;review_transfer_volume
+TRANSFER-MEDIUM-004,data_transfer,medium,equal_cost,9,5,astar_over,A* (inadmissible h),True,3,12.0,3,8,5,0,0,0.0508,0.0508,0.0483,0.0552,0.0021,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-005,data_transfer,medium,equal_cost,9,5,bfs,BFS,True,2,11.0,9,31,9,0,0,0.1727,0.171,0.1688,0.1815,0.0041,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-005,data_transfer,medium,equal_cost,9,5,ucs,UCS,True,3,10.0,17,52,10,0,0,0.3419,0.3323,0.3223,0.4292,0.0316,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-005,data_transfer,medium,equal_cost,9,5,greedy,Greedy (h-max),True,4,12.0,4,15,11,0,0,0.4017,0.4013,0.3919,0.4116,0.0064,check_network_logs;review_transfer_volume;check_user_activity;review_transfer_alert
+TRANSFER-MEDIUM-005,data_transfer,medium,equal_cost,9,5,astar,A* (h-max),True,3,10.0,17,52,10,0,0,0.7955,0.788,0.7759,0.826,0.018,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-005,data_transfer,medium,equal_cost,9,5,astar_zero,A* (h=0 baseline),True,3,10.0,17,52,10,0,0,0.3315,0.3322,0.3208,0.3437,0.0072,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-005,data_transfer,medium,equal_cost,9,5,astar_over,A* (inadmissible h),True,2,11.0,2,6,5,0,0,0.034,0.0338,0.0327,0.0356,0.0009,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-006,data_transfer,medium,equal_cost,9,5,bfs,BFS,True,2,15.0,9,31,9,0,0,0.1749,0.173,0.1704,0.1851,0.0051,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-006,data_transfer,medium,equal_cost,9,5,ucs,UCS,True,3,12.0,17,52,10,0,0,0.3332,0.3292,0.3224,0.3704,0.0143,review_transfer_alert;review_transfer_volume;check_user_activity
+TRANSFER-MEDIUM-006,data_transfer,medium,equal_cost,9,5,greedy,Greedy (h-max),True,5,12.0,5,17,9,0,0,0.4067,0.398,0.3922,0.4608,0.022,check_network_logs;check_user_activity;review_data_classification;review_transfer_volume;review_destination_ip
+TRANSFER-MEDIUM-006,data_transfer,medium,equal_cost,9,5,astar,A* (h-max),True,3,12.0,17,52,10,0,0,0.7743,0.7743,0.7578,0.7954,0.013,review_transfer_alert;check_user_activity;review_transfer_volume
+TRANSFER-MEDIUM-006,data_transfer,medium,equal_cost,9,5,astar_zero,A* (h=0 baseline),True,3,12.0,17,52,10,0,0,0.4014,0.344,0.3237,0.8655,0.1655,review_transfer_alert;review_transfer_volume;check_user_activity
+TRANSFER-MEDIUM-006,data_transfer,medium,equal_cost,9,5,astar_over,A* (inadmissible h),True,3,12.0,3,8,5,0,0,0.0507,0.0504,0.0489,0.0541,0.0015,review_transfer_alert;review_transfer_volume;check_user_activity
+TRANSFER-MEDIUM-007,data_transfer,medium,bundle_expensive,9,5,bfs,BFS,True,2,23.0,9,31,9,0,0,0.1826,0.173,0.1693,0.2487,0.024,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-007,data_transfer,medium,bundle_expensive,9,5,ucs,UCS,True,5,13.0,17,52,11,0,0,0.3592,0.3452,0.3304,0.4671,0.0417,check_network_logs;check_user_activity;review_transfer_volume;review_destination_ip;review_data_classification
+TRANSFER-MEDIUM-007,data_transfer,medium,bundle_expensive,9,5,greedy,Greedy (h-max),True,2,23.0,2,6,5,0,0,0.192,0.1879,0.1843,0.2166,0.0102,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-007,data_transfer,medium,bundle_expensive,9,5,astar,A* (h-max),True,5,13.0,17,52,11,0,0,1.2265,0.8461,0.8114,3.9455,0.9799,check_network_logs;check_user_activity;review_transfer_volume;review_data_classification;review_destination_ip
+TRANSFER-MEDIUM-007,data_transfer,medium,bundle_expensive,9,5,astar_zero,A* (h=0 baseline),True,5,13.0,17,52,11,0,0,0.4142,0.3399,0.333,0.7886,0.1474,check_network_logs;check_user_activity;review_transfer_volume;review_destination_ip;review_data_classification
+TRANSFER-MEDIUM-007,data_transfer,medium,bundle_expensive,9,5,astar_over,A* (inadmissible h),True,5,13.0,5,17,11,0,0,0.0906,0.084,0.0819,0.1499,0.0209,check_network_logs;check_user_activity;review_transfer_volume;review_destination_ip;review_data_classification
+TRANSFER-MEDIUM-008,data_transfer,medium,bundle_expensive,9,5,bfs,BFS,True,2,21.0,9,31,9,0,0,0.1745,0.1744,0.1705,0.1805,0.0035,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-008,data_transfer,medium,bundle_expensive,9,5,ucs,UCS,True,5,13.0,17,52,11,0,0,0.427,0.356,0.3318,0.6597,0.124,check_network_logs;review_transfer_volume;check_user_activity;review_destination_ip;review_data_classification
+TRANSFER-MEDIUM-008,data_transfer,medium,bundle_expensive,9,5,greedy,Greedy (h-max),True,2,21.0,2,6,5,0,0,0.1887,0.1878,0.1864,0.1942,0.0025,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-008,data_transfer,medium,bundle_expensive,9,5,astar,A* (h-max),True,5,13.0,17,52,11,0,0,1.1913,0.9985,0.8304,1.9908,0.4506,check_network_logs;review_transfer_volume;check_user_activity;review_data_classification;review_destination_ip
+TRANSFER-MEDIUM-008,data_transfer,medium,bundle_expensive,9,5,astar_zero,A* (h=0 baseline),True,5,13.0,17,52,11,0,0,1.0861,0.3431,0.3289,7.4468,2.2372,check_network_logs;review_transfer_volume;check_user_activity;review_destination_ip;review_data_classification
+TRANSFER-MEDIUM-008,data_transfer,medium,bundle_expensive,9,5,astar_over,A* (inadmissible h),True,5,13.0,5,17,11,0,0,0.2519,0.0839,0.0824,1.7431,0.524,check_network_logs;review_transfer_volume;check_user_activity;review_destination_ip;review_data_classification
+TRANSFER-MEDIUM-009,data_transfer,medium,bundle_expensive,9,5,bfs,BFS,True,2,23.0,9,31,9,0,0,0.2097,0.1805,0.1729,0.3496,0.0563,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-009,data_transfer,medium,bundle_expensive,9,5,ucs,UCS,True,5,14.0,17,52,10,0,0,0.3414,0.3389,0.3226,0.3784,0.0159,check_network_logs;review_destination_ip;check_user_activity;review_transfer_volume;review_data_classification
+TRANSFER-MEDIUM-009,data_transfer,medium,bundle_expensive,9,5,greedy,Greedy (h-max),True,2,23.0,2,6,5,0,0,0.2048,0.1915,0.1823,0.3385,0.0473,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-009,data_transfer,medium,bundle_expensive,9,5,astar,A* (h-max),True,5,14.0,17,52,11,0,0,0.8117,0.8056,0.7852,0.8549,0.0266,check_network_logs;review_destination_ip;check_user_activity;review_data_classification;review_transfer_volume
+TRANSFER-MEDIUM-009,data_transfer,medium,bundle_expensive,9,5,astar_zero,A* (h=0 baseline),True,5,14.0,17,52,10,0,0,0.3454,0.3389,0.3263,0.3756,0.0179,check_network_logs;review_destination_ip;check_user_activity;review_transfer_volume;review_data_classification
+TRANSFER-MEDIUM-009,data_transfer,medium,bundle_expensive,9,5,astar_over,A* (inadmissible h),True,5,14.0,5,17,9,0,0,0.0849,0.084,0.0803,0.0973,0.0048,check_network_logs;review_destination_ip;check_user_activity;review_transfer_volume;review_data_classification
+TRANSFER-MEDIUM-010,data_transfer,medium,bundle_expensive,9,5,bfs,BFS,True,2,17.0,9,31,9,0,0,0.1861,0.1757,0.1717,0.2421,0.0239,review_transfer_alert;correlate_transfer_evidence
+TRANSFER-MEDIUM-010,data_transfer,medium,bundle_expensive,9,5,ucs,UCS,True,4,12.0,16,50,11,0,0,0.3425,0.3158,0.308,0.5581,0.0764,check_network_logs;review_data_classification;review_destination_ip;correlate_transfer_evidence
+TRANSFER-MEDIUM-010,data_transfer,medium,bundle_expensive,9,5,greedy,Greedy (h-max),True,4,20.0,4,14,9,0,0,0.4771,0.3665,0.354,0.7542,0.1792,check_network_logs;review_transfer_volume;review_transfer_alert;check_user_activity
+TRANSFER-MEDIUM-010,data_transfer,medium,bundle_expensive,9,5,astar,A* (h-max),True,4,12.0,13,44,11,0,0,0.7379,0.727,0.7125,0.8045,0.0284,check_network_logs;review_data_classification;review_destination_ip;correlate_transfer_evidence
+TRANSFER-MEDIUM-010,data_transfer,medium,bundle_expensive,9,5,astar_zero,A* (h=0 baseline),True,4,12.0,16,50,11,0,0,0.3274,0.3126,0.3073,0.407,0.0317,check_network_logs;review_data_classification;review_destination_ip;correlate_transfer_evidence
+TRANSFER-MEDIUM-010,data_transfer,medium,bundle_expensive,9,5,astar_over,A* (inadmissible h),True,5,14.0,5,17,10,0,0,0.0867,0.0856,0.0836,0.0934,0.0035,check_network_logs;check_user_activity;review_data_classification;review_destination_ip;correlate_transfer_evidence
+TRANSFER-SIMPLE-001,data_transfer,simple,bundle_cheaper,7,3,bfs,BFS,True,1,6.0,3,9,5,0,0,0.0479,0.0475,0.0466,0.0503,0.0013,review_transfer_alert
+TRANSFER-SIMPLE-001,data_transfer,simple,bundle_cheaper,7,3,ucs,UCS,True,1,6.0,4,12,5,0,0,0.0704,0.0692,0.0667,0.0801,0.0042,review_transfer_alert
+TRANSFER-SIMPLE-001,data_transfer,simple,bundle_cheaper,7,3,greedy,Greedy (h-max),True,1,6.0,1,3,3,0,0,0.0839,0.0834,0.0826,0.0899,0.0022,review_transfer_alert
+TRANSFER-SIMPLE-001,data_transfer,simple,bundle_cheaper,7,3,astar,A* (h-max),True,1,6.0,2,7,5,0,0,0.1565,0.1515,0.1481,0.1988,0.0152,review_transfer_alert
+TRANSFER-SIMPLE-001,data_transfer,simple,bundle_cheaper,7,3,astar_zero,A* (h=0 baseline),True,1,6.0,4,12,5,0,0,0.0688,0.0677,0.0657,0.0755,0.003,review_transfer_alert
+TRANSFER-SIMPLE-001,data_transfer,simple,bundle_cheaper,7,3,astar_over,A* (inadmissible h),True,1,6.0,1,3,3,0,0,0.0158,0.0154,0.0144,0.0181,0.0011,review_transfer_alert
+TRANSFER-SIMPLE-002,data_transfer,simple,bundle_cheaper,7,3,bfs,BFS,True,1,5.0,3,9,5,0,0,0.0474,0.0472,0.0461,0.0492,0.001,review_transfer_alert
+TRANSFER-SIMPLE-002,data_transfer,simple,bundle_cheaper,7,3,ucs,UCS,True,1,5.0,6,18,5,0,0,0.1047,0.1019,0.0995,0.1206,0.0064,review_transfer_alert
+TRANSFER-SIMPLE-002,data_transfer,simple,bundle_cheaper,7,3,greedy,Greedy (h-max),True,1,5.0,1,3,3,0,0,0.0816,0.0804,0.0788,0.0907,0.0036,review_transfer_alert
+TRANSFER-SIMPLE-002,data_transfer,simple,bundle_cheaper,7,3,astar,A* (h-max),True,1,5.0,2,7,5,0,0,0.151,0.1507,0.1476,0.1543,0.0024,review_transfer_alert
+TRANSFER-SIMPLE-002,data_transfer,simple,bundle_cheaper,7,3,astar_zero,A* (h=0 baseline),True,1,5.0,6,18,5,0,0,0.1324,0.1081,0.1005,0.2581,0.0518,review_transfer_alert
+TRANSFER-SIMPLE-002,data_transfer,simple,bundle_cheaper,7,3,astar_over,A* (inadmissible h),True,1,5.0,1,3,3,0,0,0.0242,0.0239,0.0214,0.0293,0.0025,review_transfer_alert
+TRANSFER-SIMPLE-003,data_transfer,simple,bundle_cheaper,7,3,bfs,BFS,True,1,8.0,3,9,5,0,0,0.0953,0.0969,0.0832,0.1052,0.0079,review_transfer_alert
+TRANSFER-SIMPLE-003,data_transfer,simple,bundle_cheaper,7,3,ucs,UCS,True,1,8.0,5,15,5,0,0,0.1558,0.1552,0.125,0.1945,0.0189,review_transfer_alert
+TRANSFER-SIMPLE-003,data_transfer,simple,bundle_cheaper,7,3,greedy,Greedy (h-max),True,1,8.0,1,3,3,0,0,0.0916,0.0822,0.0786,0.1302,0.0169,review_transfer_alert
+TRANSFER-SIMPLE-003,data_transfer,simple,bundle_cheaper,7,3,astar,A* (h-max),True,1,8.0,2,7,5,0,0,0.1512,0.1498,0.1472,0.1563,0.0032,review_transfer_alert
+TRANSFER-SIMPLE-003,data_transfer,simple,bundle_cheaper,7,3,astar_zero,A* (h=0 baseline),True,1,8.0,5,15,5,0,0,0.0866,0.0864,0.084,0.0897,0.0016,review_transfer_alert
+TRANSFER-SIMPLE-003,data_transfer,simple,bundle_cheaper,7,3,astar_over,A* (inadmissible h),True,1,8.0,1,3,3,0,0,0.0179,0.0152,0.0141,0.0408,0.0081,review_transfer_alert
+TRANSFER-SIMPLE-004,data_transfer,simple,equal_cost,7,3,bfs,BFS,True,1,8.0,3,9,5,0,0,0.0509,0.0489,0.0467,0.0636,0.0052,review_transfer_alert
+TRANSFER-SIMPLE-004,data_transfer,simple,equal_cost,7,3,ucs,UCS,True,1,8.0,7,20,5,0,0,0.1165,0.1154,0.1138,0.1225,0.0028,review_transfer_alert
+TRANSFER-SIMPLE-004,data_transfer,simple,equal_cost,7,3,greedy,Greedy (h-max),True,1,8.0,1,3,3,0,0,0.082,0.0823,0.0801,0.0835,0.0012,review_transfer_alert
+TRANSFER-SIMPLE-004,data_transfer,simple,equal_cost,7,3,astar,A* (h-max),True,1,8.0,3,9,5,0,0,0.1654,0.1646,0.1625,0.1696,0.0023,review_transfer_alert
+TRANSFER-SIMPLE-004,data_transfer,simple,equal_cost,7,3,astar_zero,A* (h=0 baseline),True,1,8.0,7,20,5,0,0,0.1308,0.1179,0.1149,0.2444,0.04,review_transfer_alert
+TRANSFER-SIMPLE-004,data_transfer,simple,equal_cost,7,3,astar_over,A* (inadmissible h),True,1,8.0,1,3,3,0,0,0.0197,0.0194,0.0143,0.0264,0.005,review_transfer_alert
+TRANSFER-SIMPLE-005,data_transfer,simple,equal_cost,7,3,bfs,BFS,True,1,6.0,3,9,5,0,0,0.0497,0.0478,0.0463,0.0608,0.0046,review_transfer_alert
+TRANSFER-SIMPLE-005,data_transfer,simple,equal_cost,7,3,ucs,UCS,True,1,6.0,7,20,5,0,0,0.119,0.1171,0.1143,0.1334,0.0055,review_transfer_alert
+TRANSFER-SIMPLE-005,data_transfer,simple,equal_cost,7,3,greedy,Greedy (h-max),True,1,6.0,1,3,3,0,0,0.0824,0.0804,0.0789,0.0895,0.0041,review_transfer_alert
+TRANSFER-SIMPLE-005,data_transfer,simple,equal_cost,7,3,astar,A* (h-max),True,1,6.0,3,9,5,0,0,0.1677,0.163,0.1606,0.2064,0.0138,review_transfer_alert
+TRANSFER-SIMPLE-005,data_transfer,simple,equal_cost,7,3,astar_zero,A* (h=0 baseline),True,1,6.0,7,20,5,0,0,0.1164,0.1157,0.1144,0.1205,0.0018,review_transfer_alert
+TRANSFER-SIMPLE-005,data_transfer,simple,equal_cost,7,3,astar_over,A* (inadmissible h),True,1,6.0,1,3,3,0,0,0.0154,0.015,0.0145,0.0175,0.0011,review_transfer_alert
+TRANSFER-SIMPLE-006,data_transfer,simple,equal_cost,7,3,bfs,BFS,True,1,5.0,3,9,5,0,0,0.048,0.0472,0.0463,0.0534,0.0021,review_transfer_alert
+TRANSFER-SIMPLE-006,data_transfer,simple,equal_cost,7,3,ucs,UCS,True,1,5.0,6,18,5,0,0,0.1016,0.0996,0.0979,0.1126,0.0047,review_transfer_alert
+TRANSFER-SIMPLE-006,data_transfer,simple,equal_cost,7,3,greedy,Greedy (h-max),True,1,5.0,1,3,3,0,0,0.0805,0.0803,0.0792,0.0822,0.0011,review_transfer_alert
+TRANSFER-SIMPLE-006,data_transfer,simple,equal_cost,7,3,astar,A* (h-max),True,1,5.0,3,9,5,0,0,0.1665,0.1627,0.16,0.1823,0.0079,review_transfer_alert
+TRANSFER-SIMPLE-006,data_transfer,simple,equal_cost,7,3,astar_zero,A* (h=0 baseline),True,1,5.0,6,18,5,0,0,0.1028,0.1017,0.1005,0.1078,0.0025,review_transfer_alert
+TRANSFER-SIMPLE-006,data_transfer,simple,equal_cost,7,3,astar_over,A* (inadmissible h),True,1,5.0,1,3,3,0,0,0.0149,0.0147,0.014,0.0172,0.0009,review_transfer_alert
+TRANSFER-SIMPLE-007,data_transfer,simple,bundle_expensive,7,3,bfs,BFS,True,1,8.0,3,9,5,0,0,0.0482,0.048,0.0458,0.0526,0.0021,review_transfer_alert
+TRANSFER-SIMPLE-007,data_transfer,simple,bundle_expensive,7,3,ucs,UCS,True,3,3.0,5,15,5,0,0,0.0943,0.0876,0.0866,0.1453,0.0181,check_network_logs;review_data_classification;review_destination_ip
+TRANSFER-SIMPLE-007,data_transfer,simple,bundle_expensive,7,3,greedy,Greedy (h-max),True,1,8.0,1,3,3,0,0,0.0806,0.0798,0.0782,0.0867,0.0026,review_transfer_alert
+TRANSFER-SIMPLE-007,data_transfer,simple,bundle_expensive,7,3,astar,A* (h-max),True,3,3.0,5,15,5,0,0,0.247,0.2469,0.2425,0.2525,0.0029,check_network_logs;review_data_classification;review_destination_ip
+TRANSFER-SIMPLE-007,data_transfer,simple,bundle_expensive,7,3,astar_zero,A* (h=0 baseline),True,3,3.0,5,15,5,0,0,0.0893,0.0873,0.0861,0.1082,0.0067,check_network_logs;review_data_classification;review_destination_ip
+TRANSFER-SIMPLE-007,data_transfer,simple,bundle_expensive,7,3,astar_over,A* (inadmissible h),True,1,8.0,1,3,3,0,0,0.0178,0.0155,0.0143,0.038,0.0072,review_transfer_alert
+TRANSFER-SIMPLE-008,data_transfer,simple,bundle_expensive,7,3,bfs,BFS,True,1,13.0,3,9,5,0,0,0.0484,0.0482,0.0469,0.0505,0.0012,review_transfer_alert
+TRANSFER-SIMPLE-008,data_transfer,simple,bundle_expensive,7,3,ucs,UCS,True,3,8.0,7,20,6,0,0,0.1231,0.1217,0.1171,0.1396,0.0066,check_network_logs;review_destination_ip;review_data_classification
+TRANSFER-SIMPLE-008,data_transfer,simple,bundle_expensive,7,3,greedy,Greedy (h-max),True,1,13.0,1,3,3,0,0,0.0868,0.0828,0.0803,0.1138,0.0107,review_transfer_alert
+TRANSFER-SIMPLE-008,data_transfer,simple,bundle_expensive,7,3,astar,A* (h-max),True,3,8.0,6,18,5,0,0,0.2823,0.2735,0.2698,0.3474,0.0233,check_network_logs;review_data_classification;review_destination_ip
+TRANSFER-SIMPLE-008,data_transfer,simple,bundle_expensive,7,3,astar_zero,A* (h=0 baseline),True,3,8.0,7,20,6,0,0,0.1264,0.1224,0.1194,0.151,0.0109,check_network_logs;review_destination_ip;review_data_classification
+TRANSFER-SIMPLE-008,data_transfer,simple,bundle_expensive,7,3,astar_over,A* (inadmissible h),True,3,8.0,3,10,6,0,0,0.0468,0.0456,0.0434,0.0534,0.0036,check_network_logs;review_destination_ip;review_data_classification
+TRANSFER-SIMPLE-009,data_transfer,simple,bundle_expensive,7,3,bfs,BFS,True,1,10.0,3,9,5,0,0,0.0476,0.0474,0.0462,0.0508,0.0013,review_transfer_alert
+TRANSFER-SIMPLE-009,data_transfer,simple,bundle_expensive,7,3,ucs,UCS,True,3,8.0,6,18,5,0,0,0.1227,0.1075,0.1026,0.2214,0.0366,review_data_classification;check_network_logs;review_destination_ip
+TRANSFER-SIMPLE-009,data_transfer,simple,bundle_expensive,7,3,greedy,Greedy (h-max),True,1,10.0,1,3,3,0,0,0.0812,0.0809,0.079,0.0859,0.0021,review_transfer_alert
+TRANSFER-SIMPLE-009,data_transfer,simple,bundle_expensive,7,3,astar,A* (h-max),True,3,8.0,5,15,5,0,0,0.2562,0.25,0.2412,0.3156,0.0217,check_network_logs;review_data_classification;review_destination_ip
+TRANSFER-SIMPLE-009,data_transfer,simple,bundle_expensive,7,3,astar_zero,A* (h=0 baseline),True,3,8.0,6,18,5,0,0,0.1045,0.1041,0.1015,0.1109,0.0029,review_data_classification;check_network_logs;review_destination_ip
+TRANSFER-SIMPLE-009,data_transfer,simple,bundle_expensive,7,3,astar_over,A* (inadmissible h),True,1,10.0,1,3,3,0,0,0.0154,0.0146,0.0141,0.0208,0.0021,review_transfer_alert
+TRANSFER-SIMPLE-010,data_transfer,simple,bundle_expensive,7,3,bfs,BFS,True,1,11.0,3,9,5,0,0,0.0474,0.0472,0.0456,0.0507,0.0014,review_transfer_alert
+TRANSFER-SIMPLE-010,data_transfer,simple,bundle_expensive,7,3,ucs,UCS,True,3,6.0,6,18,5,0,0,0.1057,0.1045,0.1025,0.1116,0.0031,check_network_logs;review_data_classification;review_destination_ip
+TRANSFER-SIMPLE-010,data_transfer,simple,bundle_expensive,7,3,greedy,Greedy (h-max),True,1,11.0,1,3,3,0,0,0.0807,0.0804,0.0784,0.0851,0.0018,review_transfer_alert
+TRANSFER-SIMPLE-010,data_transfer,simple,bundle_expensive,7,3,astar,A* (h-max),True,3,6.0,5,15,5,0,0,0.2621,0.2531,0.2433,0.3245,0.0252,check_network_logs;review_data_classification;review_destination_ip
+TRANSFER-SIMPLE-010,data_transfer,simple,bundle_expensive,7,3,astar_zero,A* (h=0 baseline),True,3,6.0,6,18,5,0,0,0.1058,0.1043,0.1026,0.1133,0.004,check_network_logs;review_data_classification;review_destination_ip
+TRANSFER-SIMPLE-010,data_transfer,simple,bundle_expensive,7,3,astar_over,A* (inadmissible h),True,3,6.0,3,10,6,0,0,0.0444,0.0442,0.0438,0.046,0.0006,check_network_logs;review_data_classification;review_destination_ip
+PHISH-COMPLEX-001,phishing,complex,bundle_cheaper,11,7,bfs,BFS,True,2,5.0,9,35,12,0,0,0.2367,0.2034,0.1895,0.549,0.1102,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-001,phishing,complex,bundle_cheaper,11,7,ucs,UCS,True,2,5.0,11,42,13,0,0,0.2554,0.2429,0.2396,0.3004,0.0237,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-001,phishing,complex,bundle_cheaper,11,7,greedy,Greedy (h-max),True,2,5.0,2,7,6,0,0,0.2771,0.2718,0.27,0.3121,0.013,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-001,phishing,complex,bundle_cheaper,11,7,astar,A* (h-max),True,2,5.0,3,12,9,0,0,0.5308,0.4247,0.4158,1.1431,0.2335,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-001,phishing,complex,bundle_cheaper,11,7,astar_zero,A* (h=0 baseline),True,2,5.0,11,42,13,0,0,0.2905,0.2569,0.2481,0.4447,0.0691,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-001,phishing,complex,bundle_cheaper,11,7,astar_over,A* (inadmissible h),True,2,5.0,2,7,6,0,0,0.0388,0.0382,0.0374,0.0433,0.0018,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-002,phishing,complex,bundle_cheaper,11,7,bfs,BFS,True,2,12.0,9,35,12,0,0,0.2615,0.2023,0.188,0.6591,0.1467,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-002,phishing,complex,bundle_cheaper,11,7,ucs,UCS,True,2,12.0,34,117,14,0,0,0.8046,0.7822,0.7614,0.9087,0.0565,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-002,phishing,complex,bundle_cheaper,11,7,greedy,Greedy (h-max),True,4,17.0,4,17,13,0,0,0.6924,0.6207,0.6013,1.1751,0.1799,check_email_headers;review_attachment_metadata;review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-002,phishing,complex,bundle_cheaper,11,7,astar,A* (h-max),True,2,12.0,17,66,18,0,0,1.6474,1.4861,1.4512,2.4255,0.3418,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-002,phishing,complex,bundle_cheaper,11,7,astar_zero,A* (h=0 baseline),True,2,12.0,34,117,14,0,0,0.868,0.7921,0.7754,1.1716,0.1339,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-002,phishing,complex,bundle_cheaper,11,7,astar_over,A* (inadmissible h),True,2,12.0,2,7,6,0,0,0.0382,0.0378,0.0367,0.0409,0.0014,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-003,phishing,complex,bundle_cheaper,11,7,bfs,BFS,True,2,10.0,9,35,12,0,0,0.2343,0.1955,0.1881,0.5289,0.1047,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-003,phishing,complex,bundle_cheaper,11,7,ucs,UCS,True,2,10.0,23,87,18,0,0,0.5956,0.54,0.5255,0.8372,0.1239,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-003,phishing,complex,bundle_cheaper,11,7,greedy,Greedy (h-max),True,2,10.0,2,7,6,0,0,0.2922,0.2748,0.2663,0.4164,0.0466,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-003,phishing,complex,bundle_cheaper,11,7,astar,A* (h-max),True,2,10.0,6,25,13,0,0,0.7482,0.7233,0.712,0.9147,0.0621,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-003,phishing,complex,bundle_cheaper,11,7,astar_zero,A* (h=0 baseline),True,2,10.0,23,87,18,0,0,0.5606,0.5401,0.5293,0.6529,0.0403,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-003,phishing,complex,bundle_cheaper,11,7,astar_over,A* (inadmissible h),True,2,10.0,2,7,6,0,0,0.04,0.0377,0.0365,0.0579,0.0064,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-004,phishing,complex,equal_cost,11,7,bfs,BFS,True,2,10.0,9,35,12,0,0,0.1905,0.189,0.1852,0.1996,0.0051,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-004,phishing,complex,equal_cost,11,7,ucs,UCS,True,2,10.0,16,63,16,0,0,0.3705,0.3644,0.3585,0.4066,0.0148,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-004,phishing,complex,equal_cost,11,7,greedy,Greedy (h-max),True,2,10.0,2,7,6,0,0,0.2737,0.2727,0.2665,0.2853,0.0055,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-004,phishing,complex,equal_cost,11,7,astar,A* (h-max),True,2,10.0,7,28,12,0,0,0.7376,0.7317,0.7056,0.7841,0.0243,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-004,phishing,complex,equal_cost,11,7,astar_zero,A* (h=0 baseline),True,2,10.0,16,63,16,0,0,0.3671,0.3658,0.3557,0.3854,0.0078,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-004,phishing,complex,equal_cost,11,7,astar_over,A* (inadmissible h),True,2,10.0,2,7,6,0,0,0.0387,0.0377,0.0371,0.0428,0.002,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-005,phishing,complex,equal_cost,11,7,bfs,BFS,True,2,12.0,9,35,12,0,0,0.1998,0.1913,0.1886,0.2429,0.0174,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-005,phishing,complex,equal_cost,11,7,ucs,UCS,True,2,12.0,21,80,14,0,0,0.4898,0.4796,0.4691,0.5477,0.0251,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-005,phishing,complex,equal_cost,11,7,greedy,Greedy (h-max),True,2,12.0,2,7,6,0,0,0.2728,0.2727,0.2662,0.2866,0.0058,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-005,phishing,complex,equal_cost,11,7,astar,A* (h-max),True,2,12.0,7,28,12,0,0,0.7338,0.7288,0.6993,0.7836,0.023,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-005,phishing,complex,equal_cost,11,7,astar_zero,A* (h=0 baseline),True,2,12.0,21,80,14,0,0,0.4917,0.4865,0.4681,0.5374,0.0233,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-005,phishing,complex,equal_cost,11,7,astar_over,A* (inadmissible h),True,2,12.0,2,7,6,0,0,0.0404,0.0392,0.0374,0.0478,0.0035,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-006,phishing,complex,equal_cost,11,7,bfs,BFS,True,2,14.0,9,35,12,0,0,0.1937,0.1927,0.1891,0.2014,0.0044,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-006,phishing,complex,equal_cost,11,7,ucs,UCS,True,2,14.0,32,114,19,0,0,0.7323,0.7299,0.7236,0.7485,0.009,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-006,phishing,complex,equal_cost,11,7,greedy,Greedy (h-max),True,5,22.0,6,23,15,0,0,0.7721,0.7681,0.7576,0.7918,0.0109,check_email_headers;review_attachment_metadata;analyze_attachment_sandbox;review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-006,phishing,complex,equal_cost,11,7,astar,A* (h-max),True,2,14.0,20,79,20,0,0,1.6617,1.6476,1.6159,1.7744,0.0452,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-006,phishing,complex,equal_cost,11,7,astar_zero,A* (h=0 baseline),True,2,14.0,32,114,19,0,0,0.765,0.7398,0.7204,0.9933,0.081,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-006,phishing,complex,equal_cost,11,7,astar_over,A* (inadmissible h),True,2,14.0,2,7,6,0,0,0.0388,0.0384,0.037,0.0421,0.0014,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-007,phishing,complex,bundle_expensive,11,7,bfs,BFS,True,2,12.0,9,35,12,0,0,0.199,0.1921,0.1898,0.2392,0.016,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-007,phishing,complex,bundle_expensive,11,7,ucs,UCS,True,4,10.0,22,84,19,0,0,0.5146,0.509,0.4962,0.5462,0.0168,check_url_reputation;check_email_headers;verify_sender_domain;correlate_email_evidence
+PHISH-COMPLEX-007,phishing,complex,bundle_expensive,11,7,greedy,Greedy (h-max),True,2,12.0,2,7,6,0,0,0.2719,0.2712,0.2655,0.2832,0.0048,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-007,phishing,complex,bundle_expensive,11,7,astar,A* (h-max),True,4,10.0,9,37,17,0,0,1.1376,0.9894,0.9675,1.7544,0.3165,check_email_headers;check_url_reputation;verify_sender_domain;correlate_email_evidence
+PHISH-COMPLEX-007,phishing,complex,bundle_expensive,11,7,astar_zero,A* (h=0 baseline),True,4,10.0,22,84,19,0,0,0.5181,0.5156,0.5017,0.5553,0.0163,check_url_reputation;check_email_headers;verify_sender_domain;correlate_email_evidence
+PHISH-COMPLEX-007,phishing,complex,bundle_expensive,11,7,astar_over,A* (inadmissible h),True,2,12.0,2,7,6,0,0,0.0386,0.0383,0.0372,0.0418,0.0014,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-008,phishing,complex,bundle_expensive,11,7,bfs,BFS,True,2,15.0,9,35,12,0,0,0.1928,0.1913,0.1865,0.2023,0.0048,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-008,phishing,complex,bundle_expensive,11,7,ucs,UCS,True,4,11.0,17,67,18,0,0,0.4218,0.4106,0.3898,0.549,0.0475,check_email_headers;verify_sender_domain;check_url_reputation;correlate_email_evidence
+PHISH-COMPLEX-008,phishing,complex,bundle_expensive,11,7,greedy,Greedy (h-max),True,2,15.0,2,7,6,0,0,0.2709,0.2712,0.2661,0.2772,0.0035,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-008,phishing,complex,bundle_expensive,11,7,astar,A* (h-max),True,4,11.0,7,27,13,0,0,0.8405,0.7488,0.7362,1.6428,0.2825,check_email_headers;check_url_reputation;verify_sender_domain;correlate_email_evidence
+PHISH-COMPLEX-008,phishing,complex,bundle_expensive,11,7,astar_zero,A* (h=0 baseline),True,4,11.0,17,67,18,0,0,0.3978,0.3965,0.3873,0.4145,0.0093,check_email_headers;verify_sender_domain;check_url_reputation;correlate_email_evidence
+PHISH-COMPLEX-008,phishing,complex,bundle_expensive,11,7,astar_over,A* (inadmissible h),True,2,15.0,2,7,6,0,0,0.0393,0.039,0.0378,0.0431,0.0016,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-009,phishing,complex,bundle_expensive,11,7,bfs,BFS,True,2,14.0,9,35,12,0,0,0.1929,0.1917,0.1861,0.2036,0.0055,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-009,phishing,complex,bundle_expensive,11,7,ucs,UCS,True,4,10.0,19,73,18,0,0,0.4542,0.4481,0.436,0.5025,0.022,check_email_headers;verify_sender_domain;check_url_reputation;correlate_email_evidence
+PHISH-COMPLEX-009,phishing,complex,bundle_expensive,11,7,greedy,Greedy (h-max),True,2,14.0,2,7,6,0,0,0.2816,0.2724,0.2661,0.3531,0.026,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-009,phishing,complex,bundle_expensive,11,7,astar,A* (h-max),True,4,10.0,6,23,12,0,0,0.6627,0.6622,0.6423,0.6895,0.0135,check_email_headers;check_url_reputation;verify_sender_domain;correlate_email_evidence
+PHISH-COMPLEX-009,phishing,complex,bundle_expensive,11,7,astar_zero,A* (h=0 baseline),True,4,10.0,19,73,18,0,0,0.4515,0.4519,0.4445,0.4649,0.0057,check_email_headers;verify_sender_domain;check_url_reputation;correlate_email_evidence
+PHISH-COMPLEX-009,phishing,complex,bundle_expensive,11,7,astar_over,A* (inadmissible h),True,2,14.0,2,7,6,0,0,0.0386,0.0384,0.0372,0.0421,0.0014,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-010,phishing,complex,bundle_expensive,11,7,bfs,BFS,True,2,20.0,9,35,12,0,0,0.1957,0.193,0.1903,0.2095,0.0062,review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-010,phishing,complex,bundle_expensive,11,7,ucs,UCS,True,4,17.0,33,116,18,0,0,0.7757,0.767,0.7372,0.8403,0.0328,check_email_headers;verify_sender_domain;check_url_reputation;correlate_email_evidence
+PHISH-COMPLEX-010,phishing,complex,bundle_expensive,11,7,greedy,Greedy (h-max),True,4,25.0,4,17,13,0,0,0.6109,0.609,0.5973,0.6472,0.015,check_email_headers;review_attachment_metadata;review_email_security_alert;correlate_email_evidence
+PHISH-COMPLEX-010,phishing,complex,bundle_expensive,11,7,astar,A* (h-max),True,4,17.0,20,79,19,0,0,1.6469,1.6334,1.6074,1.7308,0.0404,check_email_headers;verify_sender_domain;check_url_reputation;correlate_email_evidence
+PHISH-COMPLEX-010,phishing,complex,bundle_expensive,11,7,astar_zero,A* (h=0 baseline),True,4,17.0,33,116,18,0,0,0.7731,0.7595,0.7422,0.8496,0.0319,check_email_headers;verify_sender_domain;check_url_reputation;correlate_email_evidence
+PHISH-COMPLEX-010,phishing,complex,bundle_expensive,11,7,astar_over,A* (inadmissible h),True,2,20.0,2,7,6,0,0,0.0389,0.0387,0.0374,0.0419,0.0013,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-001,phishing,medium,bundle_cheaper,9,5,bfs,BFS,True,2,8.0,7,21,6,0,0,0.1212,0.1203,0.1152,0.1287,0.0042,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-001,phishing,medium,bundle_cheaper,9,5,ucs,UCS,True,2,8.0,12,34,7,0,0,0.2212,0.2201,0.2167,0.2267,0.0042,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-001,phishing,medium,bundle_cheaper,9,5,greedy,Greedy (h-max),True,4,9.0,4,13,8,0,0,0.3753,0.3596,0.3521,0.4948,0.0429,check_email_headers;review_attachment_metadata;review_email_security_alert;analyze_attachment_sandbox
+PHISH-MEDIUM-001,phishing,medium,bundle_cheaper,9,5,astar,A* (h-max),True,2,8.0,10,30,7,0,0,0.7034,0.5719,0.5256,1.5765,0.3268,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-001,phishing,medium,bundle_cheaper,9,5,astar_zero,A* (h=0 baseline),True,2,8.0,12,34,7,0,0,0.2228,0.2235,0.2161,0.2312,0.0053,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-001,phishing,medium,bundle_cheaper,9,5,astar_over,A* (inadmissible h),True,2,8.0,2,5,4,0,0,0.0314,0.0311,0.0302,0.0333,0.001,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-002,phishing,medium,bundle_cheaper,9,5,bfs,BFS,True,2,13.0,7,21,6,0,0,0.1249,0.1205,0.1177,0.1492,0.0105,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-002,phishing,medium,bundle_cheaper,9,5,ucs,UCS,True,2,13.0,13,36,7,0,0,0.2829,0.2396,0.2338,0.6263,0.1213,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-002,phishing,medium,bundle_cheaper,9,5,greedy,Greedy (h-max),True,4,16.0,4,14,10,0,0,0.4085,0.4074,0.395,0.4398,0.0129,check_email_headers;review_attachment_metadata;analyze_attachment_sandbox;review_email_security_alert
+PHISH-MEDIUM-002,phishing,medium,bundle_cheaper,9,5,astar,A* (h-max),True,2,13.0,10,30,8,0,0,0.5966,0.5673,0.5556,0.8442,0.0877,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-002,phishing,medium,bundle_cheaper,9,5,astar_zero,A* (h=0 baseline),True,2,13.0,13,36,7,0,0,0.2665,0.2401,0.2349,0.5007,0.0824,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-002,phishing,medium,bundle_cheaper,9,5,astar_over,A* (inadmissible h),True,2,13.0,2,5,4,0,0,0.031,0.0304,0.03,0.0342,0.0013,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-003,phishing,medium,bundle_cheaper,9,5,bfs,BFS,True,2,14.0,7,21,6,0,0,0.1289,0.1224,0.1172,0.1918,0.0222,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-003,phishing,medium,bundle_cheaper,9,5,ucs,UCS,True,2,14.0,13,36,6,0,0,0.3139,0.2441,0.2329,0.522,0.1162,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-003,phishing,medium,bundle_cheaper,9,5,greedy,Greedy (h-max),True,4,16.0,4,14,10,0,0,0.4139,0.4009,0.3894,0.5451,0.0466,check_email_headers;review_attachment_metadata;analyze_attachment_sandbox;review_email_security_alert
+PHISH-MEDIUM-003,phishing,medium,bundle_cheaper,9,5,astar,A* (h-max),True,2,14.0,10,30,8,0,0,0.6445,0.5816,0.554,1.1016,0.1668,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-003,phishing,medium,bundle_cheaper,9,5,astar_zero,A* (h=0 baseline),True,2,14.0,13,36,6,0,0,0.2483,0.2366,0.2336,0.3415,0.033,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-003,phishing,medium,bundle_cheaper,9,5,astar_over,A* (inadmissible h),True,2,14.0,2,5,4,0,0,0.0404,0.0318,0.0304,0.0839,0.017,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-004,phishing,medium,equal_cost,9,5,bfs,BFS,True,2,12.0,7,21,6,0,0,0.1226,0.121,0.1182,0.1369,0.0055,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-004,phishing,medium,equal_cost,9,5,ucs,UCS,True,5,9.0,13,36,8,0,0,0.2384,0.2367,0.2301,0.2629,0.0096,check_email_headers;review_attachment_metadata;verify_sender_domain;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-004,phishing,medium,equal_cost,9,5,greedy,Greedy (h-max),True,2,12.0,2,5,4,0,0,0.18,0.1795,0.1756,0.1854,0.0033,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-004,phishing,medium,equal_cost,9,5,astar,A* (h-max),True,5,9.0,13,36,8,0,0,0.6312,0.6167,0.5915,0.7541,0.0503,check_email_headers;review_attachment_metadata;verify_sender_domain;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-004,phishing,medium,equal_cost,9,5,astar_zero,A* (h=0 baseline),True,5,9.0,13,36,8,0,0,0.296,0.2437,0.2344,0.6618,0.1337,check_email_headers;review_attachment_metadata;verify_sender_domain;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-004,phishing,medium,equal_cost,9,5,astar_over,A* (inadmissible h),True,2,12.0,2,5,4,0,0,0.0311,0.0309,0.03,0.0328,0.0007,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-005,phishing,medium,equal_cost,9,5,bfs,BFS,True,2,14.0,7,21,6,0,0,0.1225,0.1203,0.1182,0.1412,0.0068,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-005,phishing,medium,equal_cost,9,5,ucs,UCS,True,5,10.0,13,36,7,0,0,0.2754,0.2423,0.2344,0.5288,0.0905,check_email_headers;review_attachment_metadata;verify_sender_domain;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-005,phishing,medium,equal_cost,9,5,greedy,Greedy (h-max),True,4,12.0,4,14,10,0,0,0.4122,0.404,0.3941,0.4614,0.0215,check_email_headers;review_attachment_metadata;analyze_attachment_sandbox;review_email_security_alert
+PHISH-MEDIUM-005,phishing,medium,equal_cost,9,5,astar,A* (h-max),True,5,10.0,13,36,8,0,0,0.6906,0.6231,0.6078,0.9363,0.1259,check_email_headers;review_attachment_metadata;verify_sender_domain;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-005,phishing,medium,equal_cost,9,5,astar_zero,A* (h=0 baseline),True,5,10.0,13,36,7,0,0,0.2455,0.2432,0.2337,0.2621,0.0088,check_email_headers;review_attachment_metadata;verify_sender_domain;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-005,phishing,medium,equal_cost,9,5,astar_over,A* (inadmissible h),True,3,10.0,3,7,4,0,0,0.088,0.0479,0.046,0.2793,0.082,review_email_security_alert;review_attachment_metadata;analyze_attachment_sandbox
+PHISH-MEDIUM-006,phishing,medium,equal_cost,9,5,bfs,BFS,True,2,14.0,7,21,6,0,0,0.1261,0.1235,0.1209,0.1488,0.0081,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-006,phishing,medium,equal_cost,9,5,ucs,UCS,True,5,12.0,13,36,6,0,0,0.3139,0.2528,0.2345,0.5202,0.1087,check_email_headers;verify_sender_domain;review_attachment_metadata;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-006,phishing,medium,equal_cost,9,5,greedy,Greedy (h-max),True,5,18.0,5,16,8,0,0,0.4171,0.3977,0.3898,0.5628,0.0528,check_email_headers;review_attachment_metadata;check_url_reputation;analyze_attachment_sandbox;review_email_security_alert
+PHISH-MEDIUM-006,phishing,medium,equal_cost,9,5,astar,A* (h-max),True,5,12.0,13,36,8,0,0,0.6122,0.6005,0.5929,0.6519,0.0213,check_email_headers;verify_sender_domain;review_attachment_metadata;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-006,phishing,medium,equal_cost,9,5,astar_zero,A* (h=0 baseline),True,5,12.0,13,36,6,0,0,0.2526,0.2398,0.2344,0.31,0.0289,check_email_headers;verify_sender_domain;review_attachment_metadata;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-006,phishing,medium,equal_cost,9,5,astar_over,A* (inadmissible h),True,2,14.0,2,5,4,0,0,0.0319,0.0308,0.0296,0.0401,0.0032,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-007,phishing,medium,bundle_expensive,9,5,bfs,BFS,True,2,15.0,7,21,6,0,0,0.121,0.1205,0.118,0.1279,0.003,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-007,phishing,medium,bundle_expensive,9,5,ucs,UCS,True,5,8.0,13,36,8,0,0,0.2482,0.2423,0.236,0.2988,0.0194,check_email_headers;review_attachment_metadata;verify_sender_domain;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-007,phishing,medium,bundle_expensive,9,5,greedy,Greedy (h-max),True,2,15.0,3,9,6,0,0,0.2726,0.2719,0.2676,0.2792,0.0037,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-007,phishing,medium,bundle_expensive,9,5,astar,A* (h-max),True,5,8.0,13,36,9,0,0,0.631,0.6271,0.6152,0.6651,0.0158,check_email_headers;review_attachment_metadata;verify_sender_domain;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-007,phishing,medium,bundle_expensive,9,5,astar_zero,A* (h=0 baseline),True,5,8.0,13,36,8,0,0,0.2403,0.238,0.2352,0.2573,0.0068,check_email_headers;review_attachment_metadata;verify_sender_domain;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-007,phishing,medium,bundle_expensive,9,5,astar_over,A* (inadmissible h),True,3,11.0,3,7,4,0,0,0.0465,0.0465,0.0451,0.0482,0.0008,review_email_security_alert;review_attachment_metadata;analyze_attachment_sandbox
+PHISH-MEDIUM-008,phishing,medium,bundle_expensive,9,5,bfs,BFS,True,2,18.0,7,21,6,0,0,0.1209,0.1198,0.1179,0.127,0.0031,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-008,phishing,medium,bundle_expensive,9,5,ucs,UCS,True,5,12.0,13,36,7,0,0,0.2418,0.2404,0.2366,0.2526,0.0057,check_email_headers;verify_sender_domain;review_attachment_metadata;check_url_reputation;analyze_attachment_sandbox
+PHISH-MEDIUM-008,phishing,medium,bundle_expensive,9,5,greedy,Greedy (h-max),True,4,19.0,4,14,10,0,0,0.4127,0.3984,0.396,0.4842,0.0288,check_email_headers;review_attachment_metadata;analyze_attachment_sandbox;review_email_security_alert
+PHISH-MEDIUM-008,phishing,medium,bundle_expensive,9,5,astar,A* (h-max),True,5,12.0,13,36,9,0,0,0.6565,0.6508,0.6364,0.7229,0.0248,check_email_headers;review_attachment_metadata;verify_sender_domain;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-008,phishing,medium,bundle_expensive,9,5,astar_zero,A* (h=0 baseline),True,5,12.0,13,36,7,0,0,0.2444,0.2393,0.2342,0.2889,0.0161,check_email_headers;verify_sender_domain;review_attachment_metadata;check_url_reputation;analyze_attachment_sandbox
+PHISH-MEDIUM-008,phishing,medium,bundle_expensive,9,5,astar_over,A* (inadmissible h),True,2,18.0,2,5,4,0,0,0.0314,0.0308,0.0299,0.0373,0.0022,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-009,phishing,medium,bundle_expensive,9,5,bfs,BFS,True,2,16.0,7,21,6,0,0,0.1201,0.1177,0.1167,0.1373,0.0063,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-009,phishing,medium,bundle_expensive,9,5,ucs,UCS,True,5,11.0,13,36,7,0,0,0.2412,0.2415,0.2315,0.253,0.0065,check_email_headers;verify_sender_domain;review_attachment_metadata;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-009,phishing,medium,bundle_expensive,9,5,greedy,Greedy (h-max),True,5,18.0,5,16,8,0,0,0.4573,0.4064,0.3908,0.7199,0.1141,check_email_headers;review_attachment_metadata;check_url_reputation;analyze_attachment_sandbox;review_email_security_alert
+PHISH-MEDIUM-009,phishing,medium,bundle_expensive,9,5,astar,A* (h-max),True,5,11.0,13,36,9,0,0,0.64,0.6292,0.6168,0.6923,0.025,check_email_headers;verify_sender_domain;review_attachment_metadata;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-009,phishing,medium,bundle_expensive,9,5,astar_zero,A* (h=0 baseline),True,5,11.0,13,36,7,0,0,0.2405,0.2388,0.2336,0.2501,0.0058,check_email_headers;verify_sender_domain;review_attachment_metadata;analyze_attachment_sandbox;check_url_reputation
+PHISH-MEDIUM-009,phishing,medium,bundle_expensive,9,5,astar_over,A* (inadmissible h),True,2,16.0,2,5,4,0,0,0.0305,0.0304,0.0295,0.0326,0.0008,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-010,phishing,medium,bundle_expensive,9,5,bfs,BFS,True,2,11.0,7,21,6,0,0,0.1196,0.1185,0.1152,0.127,0.0038,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-010,phishing,medium,bundle_expensive,9,5,ucs,UCS,True,4,9.0,9,27,7,0,0,0.1868,0.1674,0.1622,0.2916,0.0421,check_email_headers;check_url_reputation;verify_sender_domain;correlate_email_evidence
+PHISH-MEDIUM-010,phishing,medium,bundle_expensive,9,5,greedy,Greedy (h-max),True,2,11.0,2,5,4,0,0,0.2868,0.2942,0.2495,0.345,0.0319,review_email_security_alert;correlate_email_evidence
+PHISH-MEDIUM-010,phishing,medium,bundle_expensive,9,5,astar,A* (h-max),True,4,9.0,6,17,6,0,0,0.6039,0.6039,0.548,0.6791,0.0377,check_email_headers;check_url_reputation;verify_sender_domain;correlate_email_evidence
+PHISH-MEDIUM-010,phishing,medium,bundle_expensive,9,5,astar_zero,A* (h=0 baseline),True,4,9.0,9,27,7,0,0,0.2619,0.2597,0.2382,0.2864,0.0136,check_email_headers;check_url_reputation;verify_sender_domain;correlate_email_evidence
+PHISH-MEDIUM-010,phishing,medium,bundle_expensive,9,5,astar_over,A* (inadmissible h),True,2,11.0,2,5,4,0,0,0.0473,0.0474,0.0423,0.0505,0.0022,review_email_security_alert;correlate_email_evidence
+PHISH-SIMPLE-001,phishing,simple,bundle_cheaper,7,3,bfs,BFS,True,1,6.0,3,9,5,0,0,0.132,0.0715,0.0622,0.6962,0.1983,review_email_security_alert
+PHISH-SIMPLE-001,phishing,simple,bundle_cheaper,7,3,ucs,UCS,True,1,6.0,4,12,5,0,0,0.1076,0.1024,0.09,0.1554,0.0185,review_email_security_alert
+PHISH-SIMPLE-001,phishing,simple,bundle_cheaper,7,3,greedy,Greedy (h-max),True,1,6.0,1,3,3,0,0,0.1355,0.1269,0.1211,0.2177,0.0291,review_email_security_alert
+PHISH-SIMPLE-001,phishing,simple,bundle_cheaper,7,3,astar,A* (h-max),True,1,6.0,2,7,5,0,0,0.2749,0.2406,0.2243,0.4443,0.073,review_email_security_alert
+PHISH-SIMPLE-001,phishing,simple,bundle_cheaper,7,3,astar_zero,A* (h=0 baseline),True,1,6.0,4,12,5,0,0,0.1142,0.1062,0.0916,0.2112,0.0352,review_email_security_alert
+PHISH-SIMPLE-001,phishing,simple,bundle_cheaper,7,3,astar_over,A* (inadmissible h),True,1,6.0,1,3,3,0,0,0.0224,0.0222,0.0215,0.0248,0.001,review_email_security_alert
+PHISH-SIMPLE-002,phishing,simple,bundle_cheaper,7,3,bfs,BFS,True,1,5.0,3,9,5,0,0,0.073,0.0728,0.0661,0.0805,0.0035,review_email_security_alert
+PHISH-SIMPLE-002,phishing,simple,bundle_cheaper,7,3,ucs,UCS,True,1,5.0,6,17,7,0,0,0.1871,0.1927,0.1547,0.2108,0.0217,review_email_security_alert
+PHISH-SIMPLE-002,phishing,simple,bundle_cheaper,7,3,greedy,Greedy (h-max),True,1,5.0,1,3,3,0,0,0.1557,0.1562,0.1463,0.161,0.0039,review_email_security_alert
+PHISH-SIMPLE-002,phishing,simple,bundle_cheaper,7,3,astar,A* (h-max),True,1,5.0,2,7,5,0,0,2.5177,0.2983,0.2659,21.9028,6.8146,review_email_security_alert
+PHISH-SIMPLE-002,phishing,simple,bundle_cheaper,7,3,astar_zero,A* (h=0 baseline),True,1,5.0,6,17,7,0,0,0.1453,0.1322,0.0996,0.2083,0.0475,review_email_security_alert
+PHISH-SIMPLE-002,phishing,simple,bundle_cheaper,7,3,astar_over,A* (inadmissible h),True,1,5.0,1,3,3,0,0,0.0153,0.0152,0.0145,0.0175,0.0009,review_email_security_alert
+PHISH-SIMPLE-003,phishing,simple,bundle_cheaper,7,3,bfs,BFS,True,1,2.0,3,9,5,0,0,0.0485,0.0475,0.0466,0.0547,0.0024,review_email_security_alert
+PHISH-SIMPLE-003,phishing,simple,bundle_cheaper,7,3,ucs,UCS,True,1,2.0,3,9,5,0,0,0.0523,0.0514,0.0503,0.0603,0.003,review_email_security_alert
+PHISH-SIMPLE-003,phishing,simple,bundle_cheaper,7,3,greedy,Greedy (h-max),True,1,2.0,1,3,3,0,0,0.08,0.0797,0.0788,0.0828,0.0012,review_email_security_alert
+PHISH-SIMPLE-003,phishing,simple,bundle_cheaper,7,3,astar,A* (h-max),True,1,2.0,2,7,5,0,0,0.1527,0.1527,0.1486,0.1578,0.0027,review_email_security_alert
+PHISH-SIMPLE-003,phishing,simple,bundle_cheaper,7,3,astar_zero,A* (h=0 baseline),True,1,2.0,3,9,5,0,0,0.057,0.0521,0.0513,0.0801,0.0097,review_email_security_alert
+PHISH-SIMPLE-003,phishing,simple,bundle_cheaper,7,3,astar_over,A* (inadmissible h),True,1,2.0,1,3,3,0,0,0.0156,0.0154,0.0147,0.0177,0.001,review_email_security_alert
+PHISH-SIMPLE-004,phishing,simple,equal_cost,7,3,bfs,BFS,True,1,8.0,3,9,5,0,0,0.0472,0.0474,0.0457,0.0481,0.0009,review_email_security_alert
+PHISH-SIMPLE-004,phishing,simple,equal_cost,7,3,ucs,UCS,True,1,8.0,6,18,5,0,0,0.1025,0.1008,0.0985,0.1142,0.005,review_email_security_alert
+PHISH-SIMPLE-004,phishing,simple,equal_cost,7,3,greedy,Greedy (h-max),True,1,8.0,1,3,3,0,0,0.0841,0.0814,0.0795,0.1068,0.0082,review_email_security_alert
+PHISH-SIMPLE-004,phishing,simple,equal_cost,7,3,astar,A* (h-max),True,1,8.0,3,9,5,0,0,0.5715,0.2672,0.1612,3.2296,0.9365,review_email_security_alert
+PHISH-SIMPLE-004,phishing,simple,equal_cost,7,3,astar_zero,A* (h=0 baseline),True,1,8.0,6,18,5,0,0,0.8079,0.197,0.1563,5.9677,1.8146,review_email_security_alert
+PHISH-SIMPLE-004,phishing,simple,equal_cost,7,3,astar_over,A* (inadmissible h),True,1,8.0,1,3,3,0,0,0.024,0.023,0.0216,0.031,0.003,review_email_security_alert
+PHISH-SIMPLE-005,phishing,simple,equal_cost,7,3,bfs,BFS,True,1,5.0,3,9,5,0,0,0.0865,0.0862,0.0806,0.094,0.0033,review_email_security_alert
+PHISH-SIMPLE-005,phishing,simple,equal_cost,7,3,ucs,UCS,True,1,5.0,7,20,5,0,0,0.2535,0.2337,0.216,0.4358,0.0645,review_email_security_alert
+PHISH-SIMPLE-005,phishing,simple,equal_cost,7,3,greedy,Greedy (h-max),True,1,5.0,1,3,3,0,0,0.1372,0.135,0.1238,0.1536,0.0083,review_email_security_alert
+PHISH-SIMPLE-005,phishing,simple,equal_cost,7,3,astar,A* (h-max),True,1,5.0,3,9,5,0,0,0.297,0.2895,0.2698,0.3354,0.0253,review_email_security_alert
+PHISH-SIMPLE-005,phishing,simple,equal_cost,7,3,astar_zero,A* (h=0 baseline),True,1,5.0,7,20,5,0,0,0.2979,0.2384,0.2269,0.54,0.1038,review_email_security_alert
+PHISH-SIMPLE-005,phishing,simple,equal_cost,7,3,astar_over,A* (inadmissible h),True,1,5.0,1,3,3,0,0,0.0305,0.0284,0.0245,0.0526,0.0081,review_email_security_alert
+PHISH-SIMPLE-006,phishing,simple,equal_cost,7,3,bfs,BFS,True,1,8.0,3,9,5,0,0,0.0852,0.0849,0.0813,0.0906,0.003,review_email_security_alert
+PHISH-SIMPLE-006,phishing,simple,equal_cost,7,3,ucs,UCS,True,1,8.0,7,20,5,0,0,0.2416,0.2176,0.2025,0.3746,0.0547,review_email_security_alert
+PHISH-SIMPLE-006,phishing,simple,equal_cost,7,3,greedy,Greedy (h-max),True,1,8.0,1,3,3,0,0,0.171,0.1462,0.1403,0.2805,0.0522,review_email_security_alert
+PHISH-SIMPLE-006,phishing,simple,equal_cost,7,3,astar,A* (h-max),True,1,8.0,3,9,5,0,0,0.3029,0.3049,0.2906,0.3141,0.0077,review_email_security_alert
+PHISH-SIMPLE-006,phishing,simple,equal_cost,7,3,astar_zero,A* (h=0 baseline),True,1,8.0,7,20,5,0,0,0.2274,0.2293,0.2117,0.2356,0.0072,review_email_security_alert
+PHISH-SIMPLE-006,phishing,simple,equal_cost,7,3,astar_over,A* (inadmissible h),True,1,8.0,1,3,3,0,0,0.0277,0.0272,0.026,0.0332,0.0021,review_email_security_alert
+PHISH-SIMPLE-007,phishing,simple,bundle_expensive,7,3,bfs,BFS,True,1,12.0,3,9,5,0,0,0.1227,0.0924,0.0741,0.2702,0.064,review_email_security_alert
+PHISH-SIMPLE-007,phishing,simple,bundle_expensive,7,3,ucs,UCS,True,3,9.0,6,18,5,0,0,0.2284,0.1926,0.1773,0.3933,0.0681,check_email_headers;verify_sender_domain;check_url_reputation
+PHISH-SIMPLE-007,phishing,simple,bundle_expensive,7,3,greedy,Greedy (h-max),True,1,12.0,1,3,3,0,0,0.1204,0.0935,0.0817,0.2336,0.052,review_email_security_alert
+PHISH-SIMPLE-007,phishing,simple,bundle_expensive,7,3,astar,A* (h-max),True,3,9.0,5,15,5,0,0,0.3114,0.254,0.2428,0.4803,0.0911,check_email_headers;check_url_reputation;verify_sender_domain
+PHISH-SIMPLE-007,phishing,simple,bundle_expensive,7,3,astar_zero,A* (h=0 baseline),True,3,9.0,6,18,5,0,0,0.1746,0.1933,0.1038,0.2577,0.0513,check_email_headers;verify_sender_domain;check_url_reputation
+PHISH-SIMPLE-007,phishing,simple,bundle_expensive,7,3,astar_over,A* (inadmissible h),True,1,12.0,1,3,3,0,0,0.0178,0.0149,0.0143,0.0391,0.0076,review_email_security_alert
+PHISH-SIMPLE-008,phishing,simple,bundle_expensive,7,3,bfs,BFS,True,1,7.0,3,9,5,0,0,0.051,0.047,0.0459,0.0652,0.0076,review_email_security_alert
+PHISH-SIMPLE-008,phishing,simple,bundle_expensive,7,3,ucs,UCS,True,3,5.0,8,22,6,0,0,0.1442,0.1353,0.1335,0.1971,0.0198,check_email_headers;check_url_reputation;verify_sender_domain
+PHISH-SIMPLE-008,phishing,simple,bundle_expensive,7,3,greedy,Greedy (h-max),True,1,7.0,1,3,3,0,0,0.155,0.1539,0.1479,0.1674,0.0062,review_email_security_alert
+PHISH-SIMPLE-008,phishing,simple,bundle_expensive,7,3,astar,A* (h-max),True,3,5.0,6,18,7,0,0,0.3697,0.3468,0.2748,0.5959,0.094,check_email_headers;check_url_reputation;verify_sender_domain
+PHISH-SIMPLE-008,phishing,simple,bundle_expensive,7,3,astar_zero,A* (h=0 baseline),True,3,5.0,8,22,6,0,0,0.4642,0.281,0.1775,1.3757,0.3958,check_email_headers;check_url_reputation;verify_sender_domain
+PHISH-SIMPLE-008,phishing,simple,bundle_expensive,7,3,astar_over,A* (inadmissible h),True,1,7.0,1,3,3,0,0,0.0275,0.0263,0.02,0.0421,0.0062,review_email_security_alert
+PHISH-SIMPLE-009,phishing,simple,bundle_expensive,7,3,bfs,BFS,True,1,7.0,3,9,5,0,0,0.0902,0.0918,0.05,0.1651,0.0348,review_email_security_alert
+PHISH-SIMPLE-009,phishing,simple,bundle_expensive,7,3,ucs,UCS,True,3,4.0,5,15,5,0,0,0.1047,0.0955,0.0892,0.1487,0.0194,check_url_reputation;check_email_headers;verify_sender_domain
+PHISH-SIMPLE-009,phishing,simple,bundle_expensive,7,3,greedy,Greedy (h-max),True,1,7.0,1,3,3,0,0,0.1928,0.154,0.0836,0.4386,0.1232,review_email_security_alert
+PHISH-SIMPLE-009,phishing,simple,bundle_expensive,7,3,astar,A* (h-max),True,3,4.0,5,15,5,0,0,0.3858,0.3265,0.2503,0.6365,0.1448,check_email_headers;check_url_reputation;verify_sender_domain
+PHISH-SIMPLE-009,phishing,simple,bundle_expensive,7,3,astar_zero,A* (h=0 baseline),True,3,4.0,5,15,5,0,0,0.0887,0.0885,0.0868,0.0915,0.0015,check_url_reputation;check_email_headers;verify_sender_domain
+PHISH-SIMPLE-009,phishing,simple,bundle_expensive,7,3,astar_over,A* (inadmissible h),True,1,7.0,1,3,3,0,0,0.0159,0.0158,0.0147,0.0179,0.0009,review_email_security_alert
+PHISH-SIMPLE-010,phishing,simple,bundle_expensive,7,3,bfs,BFS,True,1,6.0,3,9,5,0,0,0.0476,0.0473,0.0455,0.0495,0.0016,review_email_security_alert
+PHISH-SIMPLE-010,phishing,simple,bundle_expensive,7,3,ucs,UCS,True,3,4.0,8,22,6,0,0,0.1357,0.1341,0.1302,0.1466,0.0052,check_email_headers;verify_sender_domain;check_url_reputation
+PHISH-SIMPLE-010,phishing,simple,bundle_expensive,7,3,greedy,Greedy (h-max),True,1,6.0,1,3,3,0,0,0.0857,0.0839,0.0818,0.0951,0.0044,review_email_security_alert
+PHISH-SIMPLE-010,phishing,simple,bundle_expensive,7,3,astar,A* (h-max),True,3,4.0,6,18,6,0,0,0.438,0.4314,0.2778,0.7113,0.161,check_email_headers;check_url_reputation;verify_sender_domain
+PHISH-SIMPLE-010,phishing,simple,bundle_expensive,7,3,astar_zero,A* (h=0 baseline),True,3,4.0,8,22,6,0,0,0.2064,0.147,0.1376,0.3265,0.0854,check_email_headers;verify_sender_domain;check_url_reputation
+PHISH-SIMPLE-010,phishing,simple,bundle_expensive,7,3,astar_over,A* (inadmissible h),True,1,6.0,1,3,3,0,0,0.0159,0.0159,0.015,0.018,0.0009,review_email_security_alert
+LOGIN-COMPLEX-001,suspicious_login,complex,bundle_cheaper,11,7,bfs,BFS,True,2,10.0,13,54,15,0,0,0.6053,0.5505,0.294,1.6878,0.4076,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-001,suspicious_login,complex,bundle_cheaper,11,7,ucs,UCS,True,2,10.0,28,119,26,0,0,1.0363,0.9889,0.7164,1.5402,0.2884,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-001,suspicious_login,complex,bundle_cheaper,11,7,greedy,Greedy (h-max),True,2,10.0,2,8,7,0,0,0.5484,0.5459,0.43,0.6215,0.0642,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-001,suspicious_login,complex,bundle_cheaper,11,7,astar,A* (h-max),True,2,10.0,12,56,24,0,0,1.5153,1.3598,1.2589,2.0705,0.3152,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-001,suspicious_login,complex,bundle_cheaper,11,7,astar_zero,A* (h=0 baseline),True,2,10.0,28,119,26,0,0,0.7483,0.7083,0.6843,1.0223,0.1018,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-001,suspicious_login,complex,bundle_cheaper,11,7,astar_over,A* (inadmissible h),True,2,10.0,2,8,7,0,0,0.0453,0.043,0.0419,0.0566,0.0048,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-002,suspicious_login,complex,bundle_cheaper,11,7,bfs,BFS,True,2,14.0,13,54,15,0,0,0.3061,0.2976,0.2851,0.3674,0.025,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-002,suspicious_login,complex,bundle_cheaper,11,7,ucs,UCS,True,2,14.0,49,183,21,0,0,1.1818,1.16,1.1455,1.3623,0.0653,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-002,suspicious_login,complex,bundle_cheaper,11,7,greedy,Greedy (h-max),True,2,14.0,3,14,11,0,0,0.4824,0.4732,0.4401,0.5753,0.0409,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-002,suspicious_login,complex,bundle_cheaper,11,7,astar,A* (h-max),True,2,14.0,36,148,21,0,0,2.313,2.2732,2.2234,2.5297,0.1078,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-002,suspicious_login,complex,bundle_cheaper,11,7,astar_zero,A* (h=0 baseline),True,2,14.0,49,183,21,0,0,1.3383,1.2295,1.1937,1.6559,0.175,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-002,suspicious_login,complex,bundle_cheaper,11,7,astar_over,A* (inadmissible h),True,2,14.0,2,8,7,0,0,0.0436,0.0429,0.0414,0.0474,0.0019,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-003,suspicious_login,complex,bundle_cheaper,11,7,bfs,BFS,True,2,8.0,13,54,15,0,0,0.3327,0.2947,0.2862,0.6412,0.1094,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-003,suspicious_login,complex,bundle_cheaper,11,7,ucs,UCS,True,2,8.0,27,115,24,0,0,0.7465,0.6818,0.6543,1.021,0.1359,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-003,suspicious_login,complex,bundle_cheaper,11,7,greedy,Greedy (h-max),True,4,11.0,8,40,21,0,0,1.0576,0.9847,0.9661,1.4048,0.1505,check_login_history;review_account_permissions;review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-003,suspicious_login,complex,bundle_cheaper,11,7,astar,A* (h-max),True,2,8.0,12,56,21,0,0,1.3409,1.2283,1.1746,1.8369,0.2496,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-003,suspicious_login,complex,bundle_cheaper,11,7,astar_zero,A* (h=0 baseline),True,2,8.0,27,115,24,0,0,0.7726,0.7107,0.6537,1.2136,0.166,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-003,suspicious_login,complex,bundle_cheaper,11,7,astar_over,A* (inadmissible h),True,2,8.0,2,8,7,0,0,0.0433,0.0424,0.0409,0.05,0.0028,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-004,suspicious_login,complex,equal_cost,11,7,bfs,BFS,True,2,12.0,13,54,15,0,0,0.3596,0.2948,0.2838,0.8294,0.1673,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-004,suspicious_login,complex,equal_cost,11,7,ucs,UCS,True,2,12.0,41,162,25,0,0,1.1234,1.0455,1.0167,1.4489,0.1422,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-004,suspicious_login,complex,equal_cost,11,7,greedy,Greedy (h-max),True,7,17.0,7,30,19,0,0,1.063,0.8814,0.8485,1.6313,0.3099,check_login_history;review_account_permissions;review_session_activity;check_ip_reputation;confirm_login;check_mfa_activity;review_device_status
+LOGIN-COMPLEX-004,suspicious_login,complex,equal_cost,11,7,astar,A* (h-max),True,2,12.0,22,97,27,0,0,2.0304,1.8884,1.775,2.5063,0.2964,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-004,suspicious_login,complex,equal_cost,11,7,astar_zero,A* (h=0 baseline),True,2,12.0,41,162,25,0,0,1.0944,1.0609,1.0045,1.3529,0.1088,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-004,suspicious_login,complex,equal_cost,11,7,astar_over,A* (inadmissible h),True,2,12.0,2,8,7,0,0,0.0789,0.0498,0.0434,0.1788,0.0529,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-005,suspicious_login,complex,equal_cost,11,7,bfs,BFS,True,2,16.0,13,54,15,0,0,0.3274,0.2942,0.287,0.6041,0.0979,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-005,suspicious_login,complex,equal_cost,11,7,ucs,UCS,True,2,16.0,39,155,19,0,0,1.1897,0.9775,0.9524,2.011,0.404,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-005,suspicious_login,complex,equal_cost,11,7,greedy,Greedy (h-max),True,6,25.0,6,28,22,0,0,0.8985,0.8958,0.868,0.9625,0.0272,check_login_history;review_account_permissions;confirm_login;review_session_activity;check_mfa_activity;review_identity_alert
+LOGIN-COMPLEX-005,suspicious_login,complex,equal_cost,11,7,astar,A* (h-max),True,2,16.0,20,89,24,0,0,1.6861,1.6457,1.6217,1.9181,0.0965,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-005,suspicious_login,complex,equal_cost,11,7,astar_zero,A* (h=0 baseline),True,2,16.0,39,155,19,0,0,15.5854,2.1115,1.636,123.5345,38.2025,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-005,suspicious_login,complex,equal_cost,11,7,astar_over,A* (inadmissible h),True,2,16.0,2,8,7,0,0,0.0816,0.0812,0.0665,0.1201,0.0166,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-006,suspicious_login,complex,equal_cost,11,7,bfs,BFS,True,2,10.0,13,54,15,0,0,0.5914,0.5398,0.5186,0.8977,0.1193,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-006,suspicious_login,complex,equal_cost,11,7,ucs,UCS,True,2,10.0,41,162,20,0,0,2.1741,2.0607,1.6495,3.2334,0.4644,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-006,suspicious_login,complex,equal_cost,11,7,greedy,Greedy (h-max),True,7,13.0,9,38,21,0,0,2.0083,2.0533,1.7006,2.2347,0.1652,check_login_history;review_account_permissions;confirm_login;review_device_status;review_session_activity;check_ip_reputation;check_mfa_activity
+LOGIN-COMPLEX-006,suspicious_login,complex,equal_cost,11,7,astar,A* (h-max),True,2,10.0,28,120,26,0,0,3.5038,3.7731,2.4916,4.5457,0.7498,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-006,suspicious_login,complex,equal_cost,11,7,astar_zero,A* (h=0 baseline),True,2,10.0,41,162,20,0,0,1.8991,2.1398,1.0811,2.4661,0.467,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-006,suspicious_login,complex,equal_cost,11,7,astar_over,A* (inadmissible h),True,2,10.0,2,8,7,0,0,0.0873,0.0864,0.068,0.1175,0.0121,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-007,suspicious_login,complex,bundle_expensive,11,7,bfs,BFS,True,2,11.0,13,54,15,0,0,0.5112,0.5826,0.3016,0.6164,0.1179,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-007,suspicious_login,complex,bundle_expensive,11,7,ucs,UCS,True,4,9.0,41,162,27,0,0,1.6424,1.759,1.0308,2.0965,0.3851,check_ip_reputation;check_login_history;review_device_status;correlate_identity_evidence
+LOGIN-COMPLEX-007,suspicious_login,complex,bundle_expensive,11,7,greedy,Greedy (h-max),True,6,15.0,7,31,21,0,0,3.9376,1.4509,0.9286,26.7171,8.0089,check_login_history;confirm_login;review_account_permissions;check_mfa_activity;review_session_activity;review_identity_alert
+LOGIN-COMPLEX-007,suspicious_login,complex,bundle_expensive,11,7,astar,A* (h-max),True,4,9.0,25,108,26,0,0,3.6088,3.7756,2.3275,5.3898,0.8423,check_login_history;check_ip_reputation;review_device_status;correlate_identity_evidence
+LOGIN-COMPLEX-007,suspicious_login,complex,bundle_expensive,11,7,astar_zero,A* (h=0 baseline),True,4,9.0,41,162,27,0,0,1.6228,1.7265,1.2362,1.9904,0.2777,check_ip_reputation;check_login_history;review_device_status;correlate_identity_evidence
+LOGIN-COMPLEX-007,suspicious_login,complex,bundle_expensive,11,7,astar_over,A* (inadmissible h),True,2,11.0,2,8,7,0,0,0.0725,0.0809,0.0435,0.119,0.0246,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-008,suspicious_login,complex,bundle_expensive,11,7,bfs,BFS,True,2,18.0,13,54,15,0,0,0.4294,0.4269,0.3126,0.6175,0.1116,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-008,suspicious_login,complex,bundle_expensive,11,7,ucs,UCS,True,4,13.0,31,129,27,0,0,1.5555,1.2139,0.8202,4.8186,1.1951,check_login_history;review_device_status;check_ip_reputation;correlate_identity_evidence
+LOGIN-COMPLEX-008,suspicious_login,complex,bundle_expensive,11,7,greedy,Greedy (h-max),True,2,18.0,2,8,7,0,0,0.3791,0.3546,0.2974,0.5014,0.0792,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-008,suspicious_login,complex,bundle_expensive,11,7,astar,A* (h-max),True,4,13.0,13,57,23,0,0,4.0514,3.007,2.3517,12.1126,2.9018,check_login_history;review_device_status;check_ip_reputation;correlate_identity_evidence
+LOGIN-COMPLEX-008,suspicious_login,complex,bundle_expensive,11,7,astar_zero,A* (h=0 baseline),True,4,13.0,31,129,27,0,0,2.0284,1.7508,1.2638,5.1043,1.0971,check_login_history;review_device_status;check_ip_reputation;correlate_identity_evidence
+LOGIN-COMPLEX-008,suspicious_login,complex,bundle_expensive,11,7,astar_over,A* (inadmissible h),True,5,15.0,5,22,16,0,0,0.345,0.2478,0.1874,1.2111,0.3069,check_login_history;check_mfa_activity;review_device_status;check_ip_reputation;correlate_identity_evidence
+LOGIN-COMPLEX-009,suspicious_login,complex,bundle_expensive,11,7,bfs,BFS,True,2,12.0,13,54,15,0,0,0.5849,0.5815,0.3603,0.8419,0.1363,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-009,suspicious_login,complex,bundle_expensive,11,7,ucs,UCS,True,4,10.0,25,107,25,0,0,1.2024,1.2446,0.8262,1.3177,0.1469,check_ip_reputation;check_login_history;review_device_status;correlate_identity_evidence
+LOGIN-COMPLEX-009,suspicious_login,complex,bundle_expensive,11,7,greedy,Greedy (h-max),True,2,12.0,2,8,7,0,0,0.5156,0.597,0.2966,0.6696,0.1489,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-009,suspicious_login,complex,bundle_expensive,11,7,astar,A* (h-max),True,4,10.0,9,38,17,0,0,1.2552,1.0263,0.9666,1.8254,0.3551,check_ip_reputation;check_login_history;review_device_status;correlate_identity_evidence
+LOGIN-COMPLEX-009,suspicious_login,complex,bundle_expensive,11,7,astar_zero,A* (h=0 baseline),True,4,10.0,25,107,25,0,0,0.6206,0.6213,0.6033,0.6446,0.012,check_ip_reputation;check_login_history;review_device_status;correlate_identity_evidence
+LOGIN-COMPLEX-009,suspicious_login,complex,bundle_expensive,11,7,astar_over,A* (inadmissible h),True,2,12.0,2,8,7,0,0,0.0415,0.041,0.0404,0.0446,0.0014,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-010,suspicious_login,complex,bundle_expensive,11,7,bfs,BFS,True,2,17.0,13,54,15,0,0,0.2962,0.2942,0.2868,0.3177,0.0091,review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-010,suspicious_login,complex,bundle_expensive,11,7,ucs,UCS,True,4,12.0,42,165,27,0,0,1.0168,1.0136,1.0009,1.0367,0.0122,check_login_history;check_ip_reputation;review_device_status;correlate_identity_evidence
+LOGIN-COMPLEX-010,suspicious_login,complex,bundle_expensive,11,7,greedy,Greedy (h-max),True,4,20.0,8,40,21,0,0,1.3083,1.1099,0.9702,1.9853,0.3839,check_login_history;review_account_permissions;review_identity_alert;correlate_identity_evidence
+LOGIN-COMPLEX-010,suspicious_login,complex,bundle_expensive,11,7,astar,A* (h-max),True,4,12.0,31,133,29,0,0,2.3687,2.3002,2.2558,2.8992,0.1939,check_login_history;check_ip_reputation;review_device_status;correlate_identity_evidence
+LOGIN-COMPLEX-010,suspicious_login,complex,bundle_expensive,11,7,astar_zero,A* (h=0 baseline),True,4,12.0,42,165,27,0,0,1.1363,1.0383,1.0018,2.0733,0.3296,check_login_history;check_ip_reputation;review_device_status;correlate_identity_evidence
+LOGIN-COMPLEX-010,suspicious_login,complex,bundle_expensive,11,7,astar_over,A* (inadmissible h),True,7,16.0,7,29,20,0,0,0.1486,0.1483,0.1453,0.1545,0.003,check_login_history;check_mfa_activity;review_account_permissions;check_ip_reputation;confirm_login;review_device_status;review_session_activity
+LOGIN-MEDIUM-001,suspicious_login,medium,bundle_cheaper,9,5,bfs,BFS,True,2,8.0,11,38,9,0,0,0.2179,0.2177,0.2073,0.2342,0.0078,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-001,suspicious_login,medium,bundle_cheaper,9,5,ucs,UCS,True,3,7.0,19,59,12,0,0,0.4172,0.3787,0.3668,0.5478,0.0688,review_identity_alert;check_mfa_activity;review_account_permissions
+LOGIN-MEDIUM-001,suspicious_login,medium,bundle_cheaper,9,5,greedy,Greedy (h-max),True,2,8.0,2,7,6,0,0,0.2281,0.216,0.2101,0.303,0.0289,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-001,suspicious_login,medium,bundle_cheaper,9,5,astar,A* (h-max),True,3,7.0,17,55,11,0,0,0.8879,0.8212,0.7778,1.2946,0.163,review_identity_alert;check_mfa_activity;review_account_permissions
+LOGIN-MEDIUM-001,suspicious_login,medium,bundle_cheaper,9,5,astar_zero,A* (h=0 baseline),True,3,7.0,19,59,12,0,0,0.4358,0.4016,0.3713,0.6427,0.0894,review_identity_alert;check_mfa_activity;review_account_permissions
+LOGIN-MEDIUM-001,suspicious_login,medium,bundle_cheaper,9,5,astar_over,A* (inadmissible h),True,2,8.0,2,7,6,0,0,0.0423,0.0402,0.0377,0.0636,0.0076,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-002,suspicious_login,medium,bundle_cheaper,9,5,bfs,BFS,True,2,16.0,11,38,9,0,0,0.2136,0.2115,0.2068,0.2226,0.006,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-002,suspicious_login,medium,bundle_cheaper,9,5,ucs,UCS,True,3,13.0,19,59,11,0,0,0.3892,0.3853,0.3724,0.4381,0.0193,review_identity_alert;review_account_permissions;check_mfa_activity
+LOGIN-MEDIUM-002,suspicious_login,medium,bundle_cheaper,9,5,greedy,Greedy (h-max),True,2,16.0,2,7,6,0,0,0.212,0.2115,0.2059,0.219,0.0053,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-002,suspicious_login,medium,bundle_cheaper,9,5,astar,A* (h-max),True,3,13.0,17,55,11,0,0,1.1403,1.2284,0.8062,1.8648,0.3354,review_identity_alert;check_mfa_activity;review_account_permissions
+LOGIN-MEDIUM-002,suspicious_login,medium,bundle_cheaper,9,5,astar_zero,A* (h=0 baseline),True,3,13.0,19,59,11,0,0,0.5941,0.5856,0.5602,0.6356,0.0238,review_identity_alert;review_account_permissions;check_mfa_activity
+LOGIN-MEDIUM-002,suspicious_login,medium,bundle_cheaper,9,5,astar_over,A* (inadmissible h),True,3,13.0,3,9,6,0,0,0.0816,0.0812,0.0772,0.0919,0.004,review_identity_alert;review_account_permissions;check_mfa_activity
+LOGIN-MEDIUM-003,suspicious_login,medium,bundle_cheaper,9,5,bfs,BFS,True,2,11.0,11,38,9,0,0,0.4049,0.4106,0.3413,0.4299,0.0269,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-003,suspicious_login,medium,bundle_cheaper,9,5,ucs,UCS,True,3,8.0,19,59,12,0,0,0.7576,0.7564,0.7314,0.8182,0.0247,review_identity_alert;check_mfa_activity;review_account_permissions
+LOGIN-MEDIUM-003,suspicious_login,medium,bundle_cheaper,9,5,greedy,Greedy (h-max),True,2,11.0,2,7,6,0,0,0.4037,0.3941,0.374,0.4649,0.0282,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-003,suspicious_login,medium,bundle_cheaper,9,5,astar,A* (h-max),True,3,8.0,17,55,11,0,0,1.9675,1.3968,0.8653,7.1219,1.8561,review_identity_alert;check_mfa_activity;review_account_permissions
+LOGIN-MEDIUM-003,suspicious_login,medium,bundle_cheaper,9,5,astar_zero,A* (h=0 baseline),True,3,8.0,19,59,12,0,0,0.7011,0.6084,0.5573,1.3291,0.232,review_identity_alert;check_mfa_activity;review_account_permissions
+LOGIN-MEDIUM-003,suspicious_login,medium,bundle_cheaper,9,5,astar_over,A* (inadmissible h),True,3,8.0,3,9,6,0,0,0.0559,0.0542,0.0519,0.0672,0.0047,review_identity_alert;check_mfa_activity;review_account_permissions
+LOGIN-MEDIUM-004,suspicious_login,medium,equal_cost,9,5,bfs,BFS,True,2,16.0,11,38,9,0,0,0.246,0.2163,0.21,0.3936,0.058,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-004,suspicious_login,medium,equal_cost,9,5,ucs,UCS,True,5,13.0,19,59,11,0,0,0.3863,0.3804,0.3664,0.4472,0.0236,check_login_history;review_account_permissions;check_ip_reputation;check_mfa_activity;review_device_status
+LOGIN-MEDIUM-004,suspicious_login,medium,equal_cost,9,5,greedy,Greedy (h-max),True,2,16.0,2,7,6,0,0,0.2118,0.2106,0.2074,0.2235,0.005,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-004,suspicious_login,medium,equal_cost,9,5,astar,A* (h-max),True,5,13.0,19,59,11,0,0,0.8593,0.8548,0.8328,0.8944,0.0203,check_login_history;review_account_permissions;check_ip_reputation;check_mfa_activity;review_device_status
+LOGIN-MEDIUM-004,suspicious_login,medium,equal_cost,9,5,astar_zero,A* (h=0 baseline),True,5,13.0,19,59,11,0,0,0.6069,0.6944,0.3711,0.9708,0.2154,check_login_history;review_account_permissions;check_ip_reputation;check_mfa_activity;review_device_status
+LOGIN-MEDIUM-004,suspicious_login,medium,equal_cost,9,5,astar_over,A* (inadmissible h),True,3,13.0,3,9,6,0,0,0.1019,0.1023,0.0947,0.1125,0.0048,review_identity_alert;review_account_permissions;check_mfa_activity
+LOGIN-MEDIUM-005,suspicious_login,medium,equal_cost,9,5,bfs,BFS,True,2,10.0,11,38,9,0,0,0.4051,0.403,0.3845,0.4366,0.0158,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-005,suspicious_login,medium,equal_cost,9,5,ucs,UCS,True,2,10.0,19,59,9,0,0,0.6603,0.7025,0.4265,0.8109,0.1171,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-005,suspicious_login,medium,equal_cost,9,5,greedy,Greedy (h-max),True,4,11.0,4,16,12,0,0,0.6444,0.674,0.4273,0.8252,0.1488,check_login_history;review_account_permissions;check_mfa_activity;review_identity_alert
+LOGIN-MEDIUM-005,suspicious_login,medium,equal_cost,9,5,astar,A* (h-max),True,2,10.0,16,53,10,0,0,0.7463,0.7361,0.722,0.8435,0.0354,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-005,suspicious_login,medium,equal_cost,9,5,astar_zero,A* (h=0 baseline),True,2,10.0,19,59,9,0,0,0.371,0.3671,0.3599,0.3996,0.0123,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-005,suspicious_login,medium,equal_cost,9,5,astar_over,A* (inadmissible h),True,2,10.0,2,7,6,0,0,0.038,0.0378,0.0368,0.0397,0.001,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-006,suspicious_login,medium,equal_cost,9,5,bfs,BFS,True,2,14.0,11,38,9,0,0,0.2126,0.2128,0.2057,0.2224,0.0058,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-006,suspicious_login,medium,equal_cost,9,5,ucs,UCS,True,5,11.0,19,59,10,0,0,0.3963,0.3918,0.3786,0.4457,0.0205,check_ip_reputation;check_login_history;check_mfa_activity;review_device_status;review_account_permissions
+LOGIN-MEDIUM-006,suspicious_login,medium,equal_cost,9,5,greedy,Greedy (h-max),True,5,11.0,5,18,10,0,0,0.4352,0.4282,0.4105,0.4931,0.0231,check_login_history;review_account_permissions;review_device_status;check_mfa_activity;check_ip_reputation
+LOGIN-MEDIUM-006,suspicious_login,medium,equal_cost,9,5,astar,A* (h-max),True,5,11.0,19,59,11,0,0,0.8982,0.8743,0.8477,1.0064,0.0573,check_login_history;check_ip_reputation;check_mfa_activity;review_account_permissions;review_device_status
+LOGIN-MEDIUM-006,suspicious_login,medium,equal_cost,9,5,astar_zero,A* (h=0 baseline),True,5,11.0,19,59,10,0,0,0.3749,0.3752,0.3673,0.3817,0.0041,check_ip_reputation;check_login_history;check_mfa_activity;review_device_status;review_account_permissions
+LOGIN-MEDIUM-006,suspicious_login,medium,equal_cost,9,5,astar_over,A* (inadmissible h),True,3,11.0,3,9,6,0,0,0.0536,0.0533,0.0519,0.0564,0.0015,review_identity_alert;check_mfa_activity;review_account_permissions
+LOGIN-MEDIUM-007,suspicious_login,medium,bundle_expensive,9,5,bfs,BFS,True,2,20.0,11,38,9,0,0,0.2086,0.208,0.2054,0.2134,0.0026,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-007,suspicious_login,medium,bundle_expensive,9,5,ucs,UCS,True,5,11.0,19,59,10,0,0,0.3937,0.3861,0.3752,0.4727,0.0281,check_ip_reputation;check_login_history;check_mfa_activity;review_account_permissions;review_device_status
+LOGIN-MEDIUM-007,suspicious_login,medium,bundle_expensive,9,5,greedy,Greedy (h-max),True,2,20.0,2,7,6,0,0,0.3446,0.3468,0.2073,0.4932,0.102,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-007,suspicious_login,medium,bundle_expensive,9,5,astar,A* (h-max),True,5,11.0,19,59,11,0,0,0.9898,0.9065,0.8705,1.3921,0.1659,check_ip_reputation;check_login_history;check_mfa_activity;review_account_permissions;review_device_status
+LOGIN-MEDIUM-007,suspicious_login,medium,bundle_expensive,9,5,astar_zero,A* (h=0 baseline),True,5,11.0,19,59,10,0,0,0.3808,0.3774,0.3753,0.3973,0.0072,check_ip_reputation;check_login_history;check_mfa_activity;review_account_permissions;review_device_status
+LOGIN-MEDIUM-007,suspicious_login,medium,bundle_expensive,9,5,astar_over,A* (inadmissible h),True,5,11.0,5,16,8,0,0,0.0809,0.0795,0.0782,0.0907,0.0037,check_ip_reputation;check_login_history;check_mfa_activity;review_account_permissions;review_device_status
+LOGIN-MEDIUM-008,suspicious_login,medium,bundle_expensive,9,5,bfs,BFS,True,2,12.0,11,38,9,0,0,0.2124,0.2087,0.2036,0.2469,0.0127,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-008,suspicious_login,medium,bundle_expensive,9,5,ucs,UCS,True,4,10.0,16,53,11,0,0,0.325,0.3221,0.3161,0.3417,0.0086,check_ip_reputation;review_device_status;check_login_history;correlate_identity_evidence
+LOGIN-MEDIUM-008,suspicious_login,medium,bundle_expensive,9,5,greedy,Greedy (h-max),True,2,12.0,2,7,6,0,0,0.2218,0.2198,0.215,0.2423,0.0084,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-008,suspicious_login,medium,bundle_expensive,9,5,astar,A* (h-max),True,4,10.0,10,36,11,0,0,0.6642,0.6565,0.65,0.7167,0.0201,check_login_history;check_ip_reputation;review_device_status;correlate_identity_evidence
+LOGIN-MEDIUM-008,suspicious_login,medium,bundle_expensive,9,5,astar_zero,A* (h=0 baseline),True,4,10.0,16,53,11,0,0,0.329,0.3244,0.3224,0.366,0.0133,check_ip_reputation;review_device_status;check_login_history;correlate_identity_evidence
+LOGIN-MEDIUM-008,suspicious_login,medium,bundle_expensive,9,5,astar_over,A* (inadmissible h),True,2,12.0,2,7,6,0,0,0.038,0.0374,0.0364,0.0408,0.0015,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-009,suspicious_login,medium,bundle_expensive,9,5,bfs,BFS,True,2,18.0,11,38,9,0,0,0.2432,0.2105,0.2055,0.5168,0.0966,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-009,suspicious_login,medium,bundle_expensive,9,5,ucs,UCS,True,5,9.0,19,59,11,0,0,0.3823,0.3805,0.3649,0.4027,0.0123,check_ip_reputation;check_login_history;review_account_permissions;review_device_status;check_mfa_activity
+LOGIN-MEDIUM-009,suspicious_login,medium,bundle_expensive,9,5,greedy,Greedy (h-max),True,4,23.0,5,18,10,0,0,0.4298,0.4235,0.417,0.4669,0.0171,check_login_history;check_mfa_activity;review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-009,suspicious_login,medium,bundle_expensive,9,5,astar,A* (h-max),True,5,9.0,19,59,11,0,0,0.9034,0.8938,0.8546,0.9836,0.0406,check_login_history;check_ip_reputation;review_account_permissions;check_mfa_activity;review_device_status
+LOGIN-MEDIUM-009,suspicious_login,medium,bundle_expensive,9,5,astar_zero,A* (h=0 baseline),True,5,9.0,19,59,11,0,0,0.3795,0.3779,0.3736,0.388,0.005,check_ip_reputation;check_login_history;review_account_permissions;review_device_status;check_mfa_activity
+LOGIN-MEDIUM-009,suspicious_login,medium,bundle_expensive,9,5,astar_over,A* (inadmissible h),True,3,14.0,3,9,6,0,0,0.0612,0.0573,0.0538,0.0734,0.0079,review_identity_alert;review_account_permissions;check_mfa_activity
+LOGIN-MEDIUM-010,suspicious_login,medium,bundle_expensive,9,5,bfs,BFS,True,2,14.0,11,38,9,0,0,0.2237,0.2133,0.2118,0.2679,0.0213,review_identity_alert;correlate_identity_evidence
+LOGIN-MEDIUM-010,suspicious_login,medium,bundle_expensive,9,5,ucs,UCS,True,4,10.0,19,59,11,0,0,0.3913,0.3766,0.3688,0.4914,0.0375,review_device_status;check_ip_reputation;check_login_history;correlate_identity_evidence
+LOGIN-MEDIUM-010,suspicious_login,medium,bundle_expensive,9,5,greedy,Greedy (h-max),True,4,17.0,5,18,10,0,0,0.4213,0.4186,0.413,0.4324,0.0072,check_login_history;review_account_permissions;review_identity_alert;check_mfa_activity
+LOGIN-MEDIUM-010,suspicious_login,medium,bundle_expensive,9,5,astar,A* (h-max),True,4,10.0,18,57,11,0,0,0.8495,0.8504,0.8387,0.8607,0.0071,check_login_history;review_device_status;check_ip_reputation;correlate_identity_evidence
+LOGIN-MEDIUM-010,suspicious_login,medium,bundle_expensive,9,5,astar_zero,A* (h=0 baseline),True,4,10.0,19,59,11,0,0,0.4997,0.5061,0.3733,0.6466,0.119,review_device_status;check_ip_reputation;check_login_history;correlate_identity_evidence
+LOGIN-MEDIUM-010,suspicious_login,medium,bundle_expensive,9,5,astar_over,A* (inadmissible h),True,2,14.0,2,7,6,0,0,0.0392,0.0395,0.0373,0.041,0.0012,review_identity_alert;correlate_identity_evidence
+LOGIN-SIMPLE-001,suspicious_login,simple,bundle_cheaper,7,3,bfs,BFS,True,1,4.0,4,14,6,0,0,0.0729,0.0705,0.0696,0.0926,0.007,review_identity_alert
+LOGIN-SIMPLE-001,suspicious_login,simple,bundle_cheaper,7,3,ucs,UCS,True,1,4.0,6,20,6,0,0,0.1196,0.111,0.1086,0.1952,0.0266,review_identity_alert
+LOGIN-SIMPLE-001,suspicious_login,simple,bundle_cheaper,7,3,greedy,Greedy (h-max),True,1,4.0,1,4,4,0,0,0.1015,0.101,0.0982,0.107,0.0024,review_identity_alert
+LOGIN-SIMPLE-001,suspicious_login,simple,bundle_cheaper,7,3,astar,A* (h-max),True,1,4.0,4,14,6,0,0,0.2156,0.215,0.2133,0.2204,0.002,review_identity_alert
+LOGIN-SIMPLE-001,suspicious_login,simple,bundle_cheaper,7,3,astar_zero,A* (h=0 baseline),True,1,4.0,6,20,6,0,0,0.1402,0.1148,0.1108,0.3676,0.08,review_identity_alert
+LOGIN-SIMPLE-001,suspicious_login,simple,bundle_cheaper,7,3,astar_over,A* (inadmissible h),True,1,4.0,1,4,4,0,0,0.0206,0.0186,0.0183,0.0346,0.005,review_identity_alert
+LOGIN-SIMPLE-002,suspicious_login,simple,bundle_cheaper,7,3,bfs,BFS,True,1,2.0,4,14,6,0,0,0.0706,0.0698,0.0675,0.079,0.0032,review_identity_alert
+LOGIN-SIMPLE-002,suspicious_login,simple,bundle_cheaper,7,3,ucs,UCS,True,1,2.0,4,14,6,0,0,0.0772,0.0745,0.0728,0.0981,0.0075,review_identity_alert
+LOGIN-SIMPLE-002,suspicious_login,simple,bundle_cheaper,7,3,greedy,Greedy (h-max),True,1,2.0,1,4,4,0,0,0.1,0.0991,0.0977,0.1076,0.0029,review_identity_alert
+LOGIN-SIMPLE-002,suspicious_login,simple,bundle_cheaper,7,3,astar,A* (h-max),True,1,2.0,4,14,6,0,0,0.2189,0.2148,0.2088,0.2431,0.0111,review_identity_alert
+LOGIN-SIMPLE-002,suspicious_login,simple,bundle_cheaper,7,3,astar_zero,A* (h=0 baseline),True,1,2.0,4,14,6,0,0,0.0781,0.0763,0.0739,0.0937,0.0056,review_identity_alert
+LOGIN-SIMPLE-002,suspicious_login,simple,bundle_cheaper,7,3,astar_over,A* (inadmissible h),True,1,2.0,1,4,4,0,0,0.0186,0.0184,0.0177,0.0207,0.0008,review_identity_alert
+LOGIN-SIMPLE-003,suspicious_login,simple,bundle_cheaper,7,3,bfs,BFS,True,1,4.0,4,14,6,0,0,0.069,0.0677,0.066,0.0782,0.0036,review_identity_alert
+LOGIN-SIMPLE-003,suspicious_login,simple,bundle_cheaper,7,3,ucs,UCS,True,1,4.0,5,16,5,0,0,0.0857,0.0856,0.0845,0.0885,0.0011,review_identity_alert
+LOGIN-SIMPLE-003,suspicious_login,simple,bundle_cheaper,7,3,greedy,Greedy (h-max),True,1,4.0,1,4,4,0,0,0.0997,0.0989,0.0978,0.1077,0.0029,review_identity_alert
+LOGIN-SIMPLE-003,suspicious_login,simple,bundle_cheaper,7,3,astar,A* (h-max),True,1,4.0,4,14,6,0,0,0.2177,0.2142,0.2116,0.2446,0.01,review_identity_alert
+LOGIN-SIMPLE-003,suspicious_login,simple,bundle_cheaper,7,3,astar_zero,A* (h=0 baseline),True,1,4.0,5,16,5,0,0,0.0889,0.0871,0.0855,0.0999,0.0044,review_identity_alert
+LOGIN-SIMPLE-003,suspicious_login,simple,bundle_cheaper,7,3,astar_over,A* (inadmissible h),True,1,4.0,1,4,4,0,0,0.0188,0.0186,0.0179,0.0209,0.0008,review_identity_alert
+LOGIN-SIMPLE-004,suspicious_login,simple,equal_cost,7,3,bfs,BFS,True,1,3.0,4,14,6,0,0,0.0761,0.0681,0.067,0.1468,0.0248,review_identity_alert
+LOGIN-SIMPLE-004,suspicious_login,simple,equal_cost,7,3,ucs,UCS,True,1,3.0,7,22,6,0,0,0.1242,0.1241,0.1211,0.1277,0.0021,review_identity_alert
+LOGIN-SIMPLE-004,suspicious_login,simple,equal_cost,7,3,greedy,Greedy (h-max),True,1,3.0,1,4,4,0,0,0.0992,0.098,0.0972,0.1062,0.0027,review_identity_alert
+LOGIN-SIMPLE-004,suspicious_login,simple,equal_cost,7,3,astar,A* (h-max),True,1,3.0,4,14,6,0,0,0.2213,0.2151,0.211,0.2685,0.0171,review_identity_alert
+LOGIN-SIMPLE-004,suspicious_login,simple,equal_cost,7,3,astar_zero,A* (h=0 baseline),True,1,3.0,7,22,6,0,0,0.1305,0.1248,0.1218,0.1757,0.0163,review_identity_alert
+LOGIN-SIMPLE-004,suspicious_login,simple,equal_cost,7,3,astar_over,A* (inadmissible h),True,1,3.0,1,4,4,0,0,0.0187,0.0184,0.0179,0.0205,0.0009,review_identity_alert
+LOGIN-SIMPLE-005,suspicious_login,simple,equal_cost,7,3,bfs,BFS,True,1,8.0,4,14,6,0,0,0.0704,0.0702,0.0671,0.0761,0.0028,review_identity_alert
+LOGIN-SIMPLE-005,suspicious_login,simple,equal_cost,7,3,ucs,UCS,True,1,8.0,9,27,6,0,0,0.165,0.1592,0.1535,0.1906,0.0122,review_identity_alert
+LOGIN-SIMPLE-005,suspicious_login,simple,equal_cost,7,3,greedy,Greedy (h-max),True,1,8.0,1,4,4,0,0,0.1008,0.0997,0.0966,0.1146,0.0051,review_identity_alert
+LOGIN-SIMPLE-005,suspicious_login,simple,equal_cost,7,3,astar,A* (h-max),True,1,8.0,4,14,6,0,0,0.2221,0.2179,0.2135,0.2407,0.0091,review_identity_alert
+LOGIN-SIMPLE-005,suspicious_login,simple,equal_cost,7,3,astar_zero,A* (h=0 baseline),True,1,8.0,9,27,6,0,0,0.161,0.1563,0.1545,0.189,0.0107,review_identity_alert
+LOGIN-SIMPLE-005,suspicious_login,simple,equal_cost,7,3,astar_over,A* (inadmissible h),True,1,8.0,1,4,4,0,0,0.0192,0.0181,0.0175,0.0276,0.003,review_identity_alert
+LOGIN-SIMPLE-006,suspicious_login,simple,equal_cost,7,3,bfs,BFS,True,1,6.0,4,14,6,0,0,0.069,0.0685,0.0669,0.0755,0.0024,review_identity_alert
+LOGIN-SIMPLE-006,suspicious_login,simple,equal_cost,7,3,ucs,UCS,True,1,6.0,9,27,6,0,0,0.1722,0.1601,0.1575,0.2295,0.024,review_identity_alert
+LOGIN-SIMPLE-006,suspicious_login,simple,equal_cost,7,3,greedy,Greedy (h-max),True,1,6.0,1,4,4,0,0,0.0993,0.0989,0.097,0.1037,0.002,review_identity_alert
+LOGIN-SIMPLE-006,suspicious_login,simple,equal_cost,7,3,astar,A* (h-max),True,1,6.0,4,14,6,0,0,0.2132,0.2124,0.2098,0.221,0.0032,review_identity_alert
+LOGIN-SIMPLE-006,suspicious_login,simple,equal_cost,7,3,astar_zero,A* (h=0 baseline),True,1,6.0,9,27,6,0,0,0.1622,0.1614,0.1579,0.1709,0.0035,review_identity_alert
+LOGIN-SIMPLE-006,suspicious_login,simple,equal_cost,7,3,astar_over,A* (inadmissible h),True,1,6.0,1,4,4,0,0,0.0187,0.0184,0.0177,0.0216,0.0011,review_identity_alert
+LOGIN-SIMPLE-007,suspicious_login,simple,bundle_expensive,7,3,bfs,BFS,True,1,7.0,4,14,6,0,0,0.0697,0.0687,0.0681,0.0775,0.0028,review_identity_alert
+LOGIN-SIMPLE-007,suspicious_login,simple,bundle_expensive,7,3,ucs,UCS,True,3,5.0,8,25,6,0,0,0.1415,0.1411,0.1378,0.1462,0.0031,check_ip_reputation;check_login_history;review_device_status
+LOGIN-SIMPLE-007,suspicious_login,simple,bundle_expensive,7,3,greedy,Greedy (h-max),True,1,7.0,1,4,4,0,0,0.0993,0.0983,0.0964,0.106,0.0027,review_identity_alert
+LOGIN-SIMPLE-007,suspicious_login,simple,bundle_expensive,7,3,astar,A* (h-max),True,3,5.0,7,22,6,0,0,0.5037,0.5142,0.3058,0.7605,0.1888,check_ip_reputation;check_login_history;review_device_status
+LOGIN-SIMPLE-007,suspicious_login,simple,bundle_expensive,7,3,astar_zero,A* (h=0 baseline),True,3,5.0,8,25,6,0,0,0.1521,0.1445,0.1411,0.1961,0.0168,check_ip_reputation;check_login_history;review_device_status
+LOGIN-SIMPLE-007,suspicious_login,simple,bundle_expensive,7,3,astar_over,A* (inadmissible h),True,1,7.0,1,4,4,0,0,0.0187,0.0185,0.0176,0.0207,0.001,review_identity_alert
+LOGIN-SIMPLE-008,suspicious_login,simple,bundle_expensive,7,3,bfs,BFS,True,1,9.0,4,14,6,0,0,0.0688,0.0679,0.067,0.0731,0.002,review_identity_alert
+LOGIN-SIMPLE-008,suspicious_login,simple,bundle_expensive,7,3,ucs,UCS,True,3,5.0,8,25,7,0,0,0.1461,0.1449,0.1428,0.1572,0.0043,check_login_history;review_device_status;check_ip_reputation
+LOGIN-SIMPLE-008,suspicious_login,simple,bundle_expensive,7,3,greedy,Greedy (h-max),True,1,9.0,1,4,4,0,0,0.0995,0.0997,0.0975,0.1012,0.0011,review_identity_alert
+LOGIN-SIMPLE-008,suspicious_login,simple,bundle_expensive,7,3,astar,A* (h-max),True,3,5.0,7,22,6,0,0,0.3134,0.3125,0.3094,0.3198,0.0034,check_ip_reputation;check_login_history;review_device_status
+LOGIN-SIMPLE-008,suspicious_login,simple,bundle_expensive,7,3,astar_zero,A* (h=0 baseline),True,3,5.0,8,25,7,0,0,0.1455,0.1436,0.1404,0.1575,0.0052,check_login_history;review_device_status;check_ip_reputation
+LOGIN-SIMPLE-008,suspicious_login,simple,bundle_expensive,7,3,astar_over,A* (inadmissible h),True,1,9.0,1,4,4,0,0,0.0184,0.0183,0.0178,0.0206,0.0008,review_identity_alert
+LOGIN-SIMPLE-009,suspicious_login,simple,bundle_expensive,7,3,bfs,BFS,True,1,12.0,4,14,6,0,0,0.0792,0.0697,0.0671,0.1538,0.0266,review_identity_alert
+LOGIN-SIMPLE-009,suspicious_login,simple,bundle_expensive,7,3,ucs,UCS,True,3,7.0,9,27,8,0,0,0.1588,0.1574,0.1542,0.1657,0.0037,check_ip_reputation;check_login_history;review_device_status
+LOGIN-SIMPLE-009,suspicious_login,simple,bundle_expensive,7,3,greedy,Greedy (h-max),True,1,12.0,1,4,4,0,0,0.0999,0.0996,0.0984,0.1028,0.0014,review_identity_alert
+LOGIN-SIMPLE-009,suspicious_login,simple,bundle_expensive,7,3,astar,A* (h-max),True,3,7.0,8,25,6,0,0,0.3492,0.347,0.338,0.3799,0.0121,check_ip_reputation;check_login_history;review_device_status
+LOGIN-SIMPLE-009,suspicious_login,simple,bundle_expensive,7,3,astar_zero,A* (h=0 baseline),True,3,7.0,9,27,8,0,0,0.1617,0.1596,0.1565,0.1824,0.0074,check_ip_reputation;check_login_history;review_device_status
+LOGIN-SIMPLE-009,suspicious_login,simple,bundle_expensive,7,3,astar_over,A* (inadmissible h),True,3,7.0,3,10,6,0,0,0.0477,0.047,0.0461,0.0535,0.0022,check_ip_reputation;check_login_history;review_device_status
+LOGIN-SIMPLE-010,suspicious_login,simple,bundle_expensive,7,3,bfs,BFS,True,1,8.0,4,14,6,0,0,0.0687,0.0683,0.0675,0.0721,0.0014,review_identity_alert
+LOGIN-SIMPLE-010,suspicious_login,simple,bundle_expensive,7,3,ucs,UCS,True,3,6.0,9,27,7,0,0,0.1612,0.159,0.1559,0.1748,0.0058,check_login_history;check_ip_reputation;review_device_status
+LOGIN-SIMPLE-010,suspicious_login,simple,bundle_expensive,7,3,greedy,Greedy (h-max),True,1,8.0,1,4,4,0,0,0.0998,0.0987,0.098,0.1065,0.0027,review_identity_alert
+LOGIN-SIMPLE-010,suspicious_login,simple,bundle_expensive,7,3,astar,A* (h-max),True,3,6.0,8,25,7,0,0,0.3476,0.3457,0.3427,0.3619,0.0056,check_login_history;check_ip_reputation;review_device_status
+LOGIN-SIMPLE-010,suspicious_login,simple,bundle_expensive,7,3,astar_zero,A* (h=0 baseline),True,3,6.0,9,27,7,0,0,0.1602,0.1594,0.1582,0.1646,0.0019,check_login_history;check_ip_reputation;review_device_status
+LOGIN-SIMPLE-010,suspicious_login,simple,bundle_expensive,7,3,astar_over,A* (inadmissible h),True,1,8.0,1,4,4,0,0,0.0184,0.0182,0.0176,0.0204,0.0008,review_identity_alert
